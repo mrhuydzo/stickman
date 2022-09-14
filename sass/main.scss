@@ -44,7 +44,7 @@
 
 // Vendors and external stylesheets
 
-body {background:url("../images/pc/bg.jpg") no-repeat 50% 0 white;background-size: 100% auto;color: #0d0a46;font-size: 18px;-webkit-font-smoothing: antialiased;
+body {color: #0d0a46;font-size: 18px;-webkit-font-smoothing: antialiased;
   /* width */
   ::-webkit-scrollbar {width: 6px;}
   /* Track */
@@ -54,4 +54,3 @@ body {background:url("../images/pc/bg.jpg") no-repeat 50% 0 white;background-siz
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {background: $yellow;}
 }
-#main {overflow: hidden}
