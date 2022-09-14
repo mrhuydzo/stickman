@@ -1,13 +1,27 @@
+.sprite {background-image: url("../images/pc/sprite.png");background-repeat: no-repeat;background-position: 0 0;font-size: 0;display: inline-block}
+
 .page_main {}
 .page_body {}
 
-.section_page_1 {background: url("../images/pc/bg-page-1.jpg") no-repeat 50% 50%}
-.section_page_2 {background: url("../images/pc/bg-page-2.jpg") no-repeat 50% 50%}
-.section_page_3 {background: url("../images/pc/bg-page-3.jpg") no-repeat 50% 50%}
+.logo {margin: 0;display: inline-block;position: absolute;left: 40px;top: 40px;
+  a {display: inline-block;font-size: 0;}
+  img {width: 280px}
+}
+
+.section {background-size: cover;background-repeat: no-repeat;background-position: 50% 50%}
+.section_screen_1 {background-image: url("../images/pc/bg-page-1.jpg") }
+.section_screen_2 {background-image: url("../images/pc/bg-page-2.jpg") }
+.section_screen_3 {background-image: url("../images/pc/bg-page-3.jpg") }
+.section_screen_4 {background-image: url("../images/pc/bg-page-4.png") }
 
 
-.sprite {background-image: url("../images/pc/sprite.png");background-repeat: no-repeat;background-position: 0 0;font-size: 0;display: inline-block}
-.slogan {margin: -50px 0 0}
+
+.top_route {display: flex;width: 150px;position: absolute;top: 40px;right: 35px;
+  a {width: 48px;height: 48px;margin: 0 10px;}
+  .top_route__home {background-position: 0 0}
+  .top_route__facebook {background-position: -70px 0;}
+}
+
 .btn_download {width: 334px;height: 66px;display: block;margin: 0 auto 8px;
   &.btn_download__pc {background-position:  -308px -12px;
     &:hover {background-position:  -666px -12px;}

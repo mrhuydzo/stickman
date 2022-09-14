@@ -1,13 +1,10 @@
 {% extends "../layout/layout.twig" %}
 {% block pageTitle %} Home | Stickman {% endblock %}
 {% block page %}
-    <div class="section section_page_1">
-        <h1>sf sdf</h1>
-    </div>
-    <div class="section section_page_2">
-        <h1>21232</h1>
-    </div>
-    <div class="section section_page_3">
-        <h1>55555</h1>
-    </div>
+    {% include "../component/pc/screen1.twig" %}
+    {% include "../component/pc/screen2.twig" %}
+    {% include "../component/pc/screen3.twig" %}
+    {% include "../component/pc/screen4.twig" %}
+
+
 {% endblock %}
