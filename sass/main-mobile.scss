@@ -1,0 +1,65 @@
+@import "helpers/_variables";
+
+//Bootstrap Custom
+@import 'vendor/bootstrap-custom';;
+
+
+// Base stuff
+@import "base/_typography";
+
+@import "helpers/_mixins";
+@import "helpers/_functions";
+@import "helpers/_extends";
+@import "helpers/_common";
+
+// Sass utilities
+@import "helpers/_functions";
+@import "helpers/_mixins";
+
+// Components and modules
+@import "partials/_form";
+@import "partials/_fields";
+@import "partials/_button";
+@import "partials/_table";
+@import "partials/_modal";
+
+@import "components/_section";
+// @import "components/_back-to-top";
+@import "components/_block";
+@import "components/_preloader";
+
+@import "components/_ezb-link";
+// @import "components/_swiper-common";
+
+
+// Layout related stylesheets
+@import "mobile/_footer";
+@import "mobile/_header";
+@import "mobile/_logo";
+@import "mobile/_page-main";
+
+
+
+// Page-specific stylesheets
+
+
+
+
+// Vendors and external stylesheets
+
+body {background:url("../images/mobile/bg-mobile.jpg") no-repeat 50% 0 white;background-size: contain;color: #0d0a46;font-size: 18px;-webkit-font-smoothing: antialiased;
+  /* width */
+  ::-webkit-scrollbar {width: 6px;}
+  /* Track */
+  ::-webkit-scrollbar-track {background: $color-text-secondary;}
+  /* Handle */
+  ::-webkit-scrollbar-thumb {background: $yellow;}
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {background: $yellow;}
+}
+@include media-breakpoint-up(md) {
+  body {
+    background-size: 100% auto;
+  }
+}
+#main {overflow: hidden}

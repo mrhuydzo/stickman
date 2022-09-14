@@ -1,0 +1,51 @@
+{# layout.twig #}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block pageTitle %} Hesman Studio {% endblock %}</title>
+    <meta name=description content="{{ slogan }}"/>
+    <meta name=keywords content="{{ slogan }}"/>
+    <meta name=title content="{{ slogan }}"/>
+    <meta itemprop=keywords name=news_keywords content="{{ slogan }}"/>
+
+    <meta name=viewport
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0"/>
+    <meta name=author content="{{ slogan }}"/>
+    <meta name=article:author content="{{ slogan }}"/>
+    <meta http-equiv=Content-Type content="text/html; charset=utf-8"/>
+
+    <meta itemprop=description property=og:description content="{{ slogan }}"/>
+    <meta property=og:site_name content="{{ slogan }}"/>
+    <meta property=og:locale content=vi_VN/>
+    <meta property=og:type content=article/>
+    <meta property=og:url content=""/>
+    <meta property=og:title content="{{ slogan }}"/>
+    <meta property=fb:app_id content=1948000195514715/>
+    <meta property=og:image content=""/>
+    <meta itemprop=image content=""/>
+    <meta itemprop=datePublished content="Thu, 14-03-2019 17:26:13"/>
+
+    <meta name=robots content="index,follow"/>
+    <link rel=canonical href=""/>
+    <meta name=googlebot content="noodp,index,follow"/>
+    <meta name=robots content="index,follow"/>
+
+{#    <link rel="stylesheet" type="text/css" href="lib/fontawesome-pro/css/all.css"/>#}
+{#    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>#}
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+</head>
+<body>
+{#{% include '../common/preloader.twig' %}#}
+<div id="main">
+    {% block page %}{% endblock %}
+</div>
+
+<!-- JS -->
+<script src="lib/jquery/jquery-3.3.1.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+{#<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>#}
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+.page_main {}
+.page_body {}
+
+.sprite {background-image: url("../images/mobile/sprite-mobile.png");background-repeat: no-repeat;background-position: 0 0;font-size: 0;display: inline-block}
+.slogan {margin: 10% 0 28%;
+  img {width: 70%}
+}
+.btn_download {width: 241px;height: 46px;display: block;margin: 0 auto 8px;
+   &.btn_download__ios {background-position:  0 -54px;}
+   &.btn_download__android {background-position:0 -109px;}
+   &.btn_download__apk {background-position: 0 0}
+ }
+
+.btn_home {background-position:  -243px 0;width: 109px;height: 123px;}
+.btn_napthe {background-position: -377px 0;width: 108px;height: 123px;}
+
+.btn_action {height: 37px;margin: 0 8px;
+  &.btn_fanpage {background-position: 0 -162px;width: 156px;}
+  &.btn_chat {background-position: 0 -214px;width: 179px;}
+  &.btn_code {background-position: 0 -269px;width: 156px;}
+  &.btn_youtube {background-position: 0 -323px;width: 156px;}
+  &.btn_tiktok {background-position: 0 -379px;width: 156px;}
+}
+
+.comming_soon {background:  url("../images/bg-comming-soon.png") no-repeat 0 0; width: 336px;height: 258px;margin: 0 auto;position: relative;pointer-events: auto;
+  .btn-close {background:  url("../images/close-comming-soon.png") no-repeat 0 0; width: 36px;height: 31px;position: absolute;top: 17%;cursor: pointer;
+    right: 17%;display: block;border: none;padding: 0}
+}
+
+@include media-breakpoint-up(md) {
+  .slogan {margin: 5% 0 30%;
+    img {width: 80%}
+  }
+}

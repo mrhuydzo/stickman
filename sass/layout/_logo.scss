@@ -1,0 +1,16 @@
+.logo {display: inline-block;font-size: 0;
+  //img {width: 220px}
+}
+
+@include media-breakpoint-up(lg) {
+  //.logo {position: absolute;left: 50%;top: 0;
+  //  @include translate(-50%,0);
+  //
+  //  img {width: 360px;
+  //    @include transition(all .3s ease);
+  //  }
+  //  .fixed & {
+  //    img {width: 220px}
+  //  }
+  //}
+}

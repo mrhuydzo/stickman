@@ -1,0 +1,58 @@
+//Global
+
+a {color: $color-text;text-decoration: none;-webkit-font-smoothing: antialiased;
+  @include transition(color .3s ease);
+  &:hover {color: #ffd35b;text-decoration: none;}
+}
+
+svg {width: 100%;height: 100%}
+
+img {max-width: 100%}
+
+hr {border-top: solid 1px $color-border;border-bottom: none;margin: 10px 0;}
+
+//White space
+.white_space_nowarp {white-space: nowrap}
+
+
+.font_italic {font-style: italic}
+.font_title {font-family: $font-title}
+
+.center_block {
+  @include center-block(100%);
+}
+
+
+.scroll_mobile_h {
+  display: flex !important;; /* [1] */
+  flex-wrap: nowrap !important; /* [1] */
+  overflow-x: auto !important;; /* [1] */
+  -webkit-overflow-scrolling: touch; /* [4] */
+  -ms-overflow-style: none; /* [5] */
+  overflow: -moz-scrollbars-none;
+}
+.scroll_mobile_h::-webkit-scrollbar {
+  //width: 0 !important
+}
+
+.fix_top {position: sticky;top: 0;z-index: 1}
+
+
+
+.col-lg-five{
+  @include media-breakpoint-up(lg) {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+
+ @include scroll-bar(8px,$color-text-secondary,$blue,darken($blue,20%));
+// @include scroll-bar-ff()
+
+

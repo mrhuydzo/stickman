@@ -1,0 +1,28 @@
+{
+  "name": "dungsirong",
+  "version": "1.0.0",
+  "description": "Dũng sĩ rồng",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrhuydzo/dungsirong.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrhuydzo/dungsirong/issues"
+  },
+  "homepage": "https://github.com/mrhuydzo/dungsirong#readme",
+  "dependencies": {
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "gulp-dependents": "^1.2.5",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-twig": "^1.2.0",
+    "sass": "^1.52.3"
+  }
+}

@@ -1,0 +1,48 @@
+{% extends "../layout/layout-mobile.twig" %}
+{% block pageTitle %} Home | Dũng sĩ rồng {% endblock %}
+{% block page %}
+    <div id="page_home" class="page_main">
+        {% include '../layout/header-mobile.twig' %}
+        <div class="page_body mb-6">
+            <div class="slogan text-center">
+                <img src="images/slogan.png" alt="Dũng sĩ rồng"/>
+            </div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-6 col-md-4 text-center text-md-end">
+                        <a href="#" class="btn_home sprite" title="Trang chủ" data-bs-toggle="modal" data-bs-target="#exampleModal">Trang chủ</a>
+                    </div>
+                  <div class="col-12 col-md-4 order-last text-center">
+                      <a href="#" class="sprite btn_download  btn_download__ios" title="Download iOS" data-bs-toggle="modal" data-bs-target="#exampleModal">Download iOS</a>
+                      <a href="#" class="sprite btn_download  btn_download__android" title="Download Android" data-bs-toggle="modal" data-bs-target="#exampleModal">Download Android</a>
+                      <a href="#" class="sprite btn_download  btn_download__apk" title="Download Apk" data-bs-toggle="modal" data-bs-target="#exampleModal">Download Apk</a>
+                  </div>
+                    <div class="col-6 col-md-4 order-md-last text-center">
+                        <a href="#" class="sprite btn_napthe" title="Nạp thẻ" data-bs-toggle="modal" data-bs-target="#exampleModal">Nạp thẻ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-6 col-md-4">
+                        <a href="#" class="sprite btn_action btn_fanpage" target="_blank" title="Fanpage" data-bs-toggle="modal" data-bs-target="#exampleModal">Fanpage</a>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <a href="#" class="sprite btn_action btn_tiktok" title="Tiktok" data-bs-toggle="modal" data-bs-target="#exampleModal">Tiktok</a>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <a href="#" class="sprite btn_action btn_code" title="Hd nhập code" data-bs-toggle="modal" data-bs-target="#exampleModal">Hướng dẫn nhập code</a>
+                    </div>
+                    <div class="col-6 col-md-4 offset-md-2">
+                        <a href="#" class="sprite btn_action btn_youtube" title="Youtube" data-bs-toggle="modal" data-bs-target="#exampleModal">Youtube</a>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <a href="#" class="sprite btn_action btn_chat" title="Chat với Admin" data-bs-toggle="modal" data-bs-target="#exampleModal">Chat với Admin</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% include '../layout/footer-mobile.twig' %}
+        {% include '../common/comming-soon.twig' %}
+    </div>
+{% endblock %}

@@ -1,0 +1,43 @@
+.btn {text-transform: uppercase;min-width: 170px}
+//.button {
+//	outline: none;
+//	font-size: $font-size-s;
+//	border: solid 1px transparent;
+//	display: inline-block;
+//	padding: 10px 15px;
+//	border-radius: 24px;
+//	text-align: center;
+//	min-width: 120px;
+//	@include transition(background-color .3s ease, border-color .3s ease, color .3s ease);
+//
+//	&.button_sm {
+//		padding: 7px 15px;
+//	}
+//	&:focus {outline: none !important;}
+//}
+//
+//@each $color-value in $colors {
+//	.button_{
+//		&#{nth($color-value,1)} {
+//			background-color: nth($color-value, 2);
+//			color: white;
+//            &:hover {
+//                background-color: darken(nth($color-value, 2),10%);
+//	            color: white;
+//            }
+//		}
+//	}
+//	.button_outline_{
+//		&#{nth($color-value,1)} {
+//			background-color: white;
+//			color: nth($color-value, 2);
+//			border-color: nth($color-value, 2);
+//			&:hover {
+//				background-color: darken(nth($color-value, 2),10%);
+//				border-color: darken(nth($color-value, 2),10%);
+//				color: white;
+//			}
+//		}
+//	}
+//}
+//

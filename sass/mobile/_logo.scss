@@ -1,0 +1,9 @@
+.logo {margin: 0;padding: 5% 0 0;display: inline-block;font-size: 0;
+  img {max-width: 160px}
+}
+
+@include media-breakpoint-up(md) {
+  .logo {
+    img {max-width: 200px}
+  }
+}

@@ -1,0 +1,204 @@
+////Spacing - Begin
+//$spacing-values: (0, 5, 10, 12, 15, 20, 25, 30, 35, 40, 45, 50);
+//@each $breakpoint in map-keys($grid-breakpoints) {
+//	@include media-breakpoint-up($breakpoint) {
+//		$infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+//		@each $spacing-value in $spacing-values {
+//			//Margin - Begin
+//			.xyz#{$infix} {
+//				&#{$spacing-value} {
+//					margin-top: #{$spacing-value}px !important;
+//				}
+//			}
+//		}
+//	}
+//}
+
+
+//Spacing - Begin
+$spacing-values: (0, 4, 5, 8, 10, 12, 15, 20, 25, 30, 35, 40, 45, 50,90);
+@each $spacing-value in $spacing-values {
+	//Margin - Begin
+	.mt {
+		&#{$spacing-value} {
+			margin-top: #{$spacing-value}px !important;
+		}
+	}
+
+	.mb {
+		&#{$spacing-value} {
+			margin-bottom: #{$spacing-value}px !important;
+		}
+	}
+
+	.ml {
+		&#{$spacing-value} {
+			margin-left: #{$spacing-value}px !important;
+		}
+	}
+
+	.mr {
+		&#{$spacing-value} {
+			margin-right: #{$spacing-value}px !important;
+		}
+	}
+
+	.mx {
+		&#{$spacing-value} {
+			margin: 0 #{$spacing-value}px !important;
+		}
+	}
+
+	.my {
+		&#{$spacing-value} {
+			margin: #{$spacing-value}px 0 !important;
+		}
+	}
+	//Margin - End
+
+	//Padding - Begin
+	.pt {
+		&#{$spacing-value} {
+			padding-top: #{$spacing-value}px !important;
+		}
+	}
+
+	.pb {
+		&#{$spacing-value} {
+			padding-bottom: #{$spacing-value}px !important;
+		}
+	}
+
+	.pl {
+		&#{$spacing-value} {
+			padding-left: #{$spacing-value}px !important;
+		}
+	}
+
+	.pr {
+		&#{$spacing-value} {
+			padding-right: #{$spacing-value}px !important;
+		}
+	}
+
+	.px {
+		&#{$spacing-value} {
+			padding: 0 #{$spacing-value}px !important;
+		}
+	}
+
+	.py {
+		&#{$spacing-value} {
+			padding: #{$spacing-value}px 0 !important;
+		}
+	}
+	//Padding - End
+}
+
+//Spacing - End
+
+//Width
+$width-values: (50, 70, 100, 120, 165, 600);
+@each $value in $width-values {
+	.max_width {
+		&#{$value} {
+			max-width: #{$value}px !important;
+		}
+	}
+	.min_width {
+		&#{$value} {
+			min-width: #{$value}px !important;
+		}
+	}
+	.max_height {
+		&#{$value} {
+			max-height: #{$value}px !important;
+		}
+	}
+	.min_height {
+		&#{$value} {
+			min-height: #{$value}px !important;
+		}
+	}
+	.width {
+		&#{$value} {
+			width: #{$value}px !important;
+		}
+	}
+	.height {
+		&#{$value} {
+			height: #{$value}px !important;
+		}
+	}
+}
+
+
+//Vertical align
+$vertical-align-values: (-1, -2, -3, -4, -5, -10, 0, 1, 2, 3, 4, 5);
+@each $vertical-align-value in $vertical-align-values {
+	.vertical_align {
+		&#{$vertical-align-value} {
+			vertical-align: #{$vertical-align-value}px !important;
+		}
+	}
+}
+
+//Icon Size
+$icon-values: (50);
+@each $icon-value in $icon-values {
+    .icon_svg_{
+      &#{$icon-value}{
+        width: #{$icon-value}px !important;
+        height: #{$icon-value}px !important;
+        font-size: 0;
+        display: inline-block;
+      }
+    }
+}
+
+//Loop Color,Background Color
+@each $color-value in $colors {
+	.color_ {
+		&#{nth($color-value,1)} {
+			color: nth($color-value, 2) !important;
+		}
+	}
+	.bg_ {
+		&#{nth($color-value,1)} {
+			background-color: nth($color-value, 2) !important;
+		}
+	}
+	.border_,
+	.border_top_,
+	.border_left_,
+	.border_bottom_,
+	.border_right_ {
+		&#{nth($color-value,1)} {
+			border-color: nth($color-value, 2) !important;
+		}
+	}
+	.hr_#{nth($color-value,1)} {
+		border-color: nth($color-value, 2) !important;;
+	}
+}
+
+
+// font size
+$font-size-values: (12, 14, 16, 18, 20, 32, 40);
+@each $font-size in $font-size-values {
+	.fs_,
+	.font_size_ {
+		&#{$font-size} {
+			font-size: #{$font-size}px !important;
+		}
+	}
+}
+
+//Loop Font-weight
+@each $value in $theme-font-weights {
+	.fw_ {
+		&#{nth($value,1)} {
+			font-weight: nth($value, 2) !important;
+		}
+	}
+}
