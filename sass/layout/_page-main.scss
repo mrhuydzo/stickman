@@ -8,13 +8,27 @@
   img {width: 280px}
 }
 
-.section {background-size: cover;background-repeat: no-repeat;background-position: 50% 50%}
+.section {background-size: 100% 100%;background-repeat: no-repeat;background-position: 50% 50%;background-color: #060000;
+  @include media-breakpoint-down(xl) {
+    background-size: cover;
+  }
+}
 .section_screen_1 {background-image: url("../images/pc/bg-page-1.jpg") }
 .section_screen_2 {background-image: url("../images/pc/bg-page-2.jpg") }
 .section_screen_3 {background-image: url("../images/pc/bg-page-3.jpg") }
 .section_screen_4 {background-image: url("../images/pc/bg-page-4.png") }
 
+.onepage-pagination {right: inherit;left: 10px;top: 25%;
+  li {margin: 0 0 36px;font-size: 0;
+    &:last-child {margin: 0}
+    a {background: url("../images/pc/sprite.png") no-repeat -455px -653px transparent;width: 27px;height: 30px;display: inline-block;padding: 0;font-size: 0;
+      &::before {content: none}
+      &.active {background-position: -402px -653px;}
+    }
+  }
+}
 
+/*Screen 1 - START*/
 
 .top_route {display: flex;width: 150px;position: absolute;top: 40px;right: 35px;
   a {width: 48px;height: 48px;margin: 0 10px;}
@@ -22,43 +36,65 @@
   .top_route__facebook {background-position: -70px 0;}
 }
 
-.btn_download {width: 334px;height: 66px;display: block;margin: 0 auto 8px;
-  &.btn_download__pc {background-position:  -308px -12px;
-    &:hover {background-position:  -666px -12px;}
+
+.download_grp {background-position: -2px -61px;width: 184px;height: 447px;position: absolute;right: 10px;bottom: 10%}
+.download_grp__link {height: 330px;display: flex;flex-direction: column;align-items: center;padding: 170px 0 0;
+  a {display: block;margin: 0 0 10px}
+  .link_gg_play {background-position: -11px -547px;width: 143px;height: 40px;}
+  .link_appstore {background-position: -11px -593px;width: 143px;height: 40px;}
+  .link_apk {background-position: -11px -650px;width: 143px;height: 48px;}
+}
+.join_grp {display: block;width: 100%;height: 70px;margin: 20px 0 0;}
+
+.btn_play {background-position: -188px -624px;width: 135px;height: 147px;position: absolute;top: 50%;left: 0;
+  @include translate(0,-50%)
+}
+/*Screen 1 - END*/
+
+
+
+/*Screen 2 - START*/
+.btn_bottom {position: absolute;bottom: 3%;left: 0;width: 100%;display: flex;align-items: center;justify-content: space-around;font-size: 30px;
+  a {}
+  .btn_thele {background-position: -201px -228px;width: 318px;height: 110px;
+    &:hover {background-position: -207px -351px;}
   }
-  &.btn_download__ios {background-position: -308px -113px;
-    &:hover {background-position: -666px -113px;}
+
+  .btn_signin {background-position: -203px 0;width: 318px;height: 110px;
+    &:hover {background-position: -201px -114px;}
   }
-  &.btn_download__android {background-position: -316px -213px;
-    &:hover {background-position: -666px -213px;}
-  }
-  &.btn_download__apk {background-position: -315px -312px;
-    &:hover {background-position: -666px -319px;}
-  }
+
+  .registered {background-position: -207px -477px;width: 322px;height: 122px;text-align: center;color: black;padding: 28px 0 0;line-height: 24px;}
 }
 
-.btn_home {background-position:  -49px -31px;width: 176px;height: 201px;}
-.btn_napthe {background-position:  -49px -252px;width: 176px;height: 201px;}
-
-.btn_action {height: 59px;margin: 0 8px;
-  &.btn_fanpage {background-position: 0 -586px;width: 255px;
-    &:hover {background-position: -274px -586px;}
+#hero_intro__tab {border: none;position: absolute;bottom: 5%;left: 50%;font-size: 0;
+  @include translate(-70%,0);
+  li {
+    + li {margin: 0 0 0 12px}
   }
-  &.btn_chat {background-position: 0 -670px;width: 293px;
-    &:hover {background-position: -307px -670px;}
+  button {background-color: transparent;padding: 0;width: 69px;height: 76px;border: none;opacity: .8;
+    @include transition(opacity .3s ease);
+    &:hover {opacity: 1;}
   }
-  &.btn_code {background-position: 0 -753px;width: 255px;;
-    &:hover {background-position:  -274px -753px;}
+  .hero_type1 {background-position: -14px -827px;
+    &.active {background-position: -13px -909px;}
   }
-  &.btn_youtube {background-position: 0 -828px;width: 255px;
-    &:hover {background-position: -273px -828px;}
+  .hero_type2 {background-position: -99px -828px;
+    &.active {background-position: -93px -909px;}
   }
-  &.btn_tiktok {background-position: 0 -905px;width: 255px;
-    &:hover {background-position: -274px -905px;}
+  .hero_type3 {background-position: -175px -826px;
+    &.active {background-position: -174px -907px;}
+  }
+  .hero_type4 {background-position: -254px -828px;
+    &.active {background-position: -255px -909px;}
+  }
+  .hero_type5 {background-position: -337px -828px;
+    &.active {background-position: -337px -910px;}
+  }
+  .hero_type6 {background-position: -418px -830px;
+    &.active {background-position: -422px -911px;}
   }
 }
+#hero_intro__content {padding: 200px 0}
 
-.comming_soon {background:  url("../images/bg-comming-soon.png") no-repeat 0 0; width: 336px;height: 258px;margin: 0 auto;position: relative;pointer-events: auto;
-  .btn-close {background:  url("../images/close-comming-soon.png") no-repeat 0 0; width: 36px;height: 31px;position: absolute;top: 17%;cursor: pointer;
-    right: 17%;display: block;border: none;padding: 0}
-}
+/*Screen 2 - END*/

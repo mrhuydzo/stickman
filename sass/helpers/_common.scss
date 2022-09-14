@@ -16,7 +16,7 @@ hr {border-top: solid 1px $color-border;border-bottom: none;margin: 10px 0;}
 
 
 .font_italic {font-style: italic}
-.font_title {font-family: $font-title}
+//.font_title {font-family: $font-title}
 
 .center_block {
   @include center-block(100%);
