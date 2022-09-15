@@ -8,14 +8,14 @@
   img {width: 280px}
 }
 
-.section {background-size: cover;background-repeat: no-repeat;background-position: 50% 50%;background-color: #060000;}
-.section_screen_1 {background-image: url("../images/mobile/bg-screen-1.jpg") }
-.section_screen_2 {background-image: url("../images/mobile/bg-screen-2.jpg") }
-.section_screen_3 {background-image: url("../images/mobile/bg-screen-3.jpg") }
-.section_screen_4 {background-image: url("../images/mobile/bg-screen-4.png") }
+.section {background-repeat: no-repeat;background-position: 50% 50%;background-color: #060000;background-size: cover}
+.section_screen_1 {background-image: url("../images/mobile/bg-screen-1.jpg");}
+.section_screen_2 {background-image: url("../images/mobile/bg-screen-2.jpg");}
+.section_screen_3 {background-image: url("../images/mobile/bg-screen-3.jpg");}
+.section_screen_4 {background-image: url("../images/mobile/bg-screen-4.jpg");}
 
 @include media-breakpoint-up(md) {
-
+  .section {background-size: 100% 110%;background-position: 50% 10%;}
 }
 
 .onepage-pagination {right: inherit;left: 10px;top: 35%;
