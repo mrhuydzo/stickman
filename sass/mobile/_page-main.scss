@@ -8,15 +8,15 @@
   img {width: 280px}
 }
 
-.section {background-size: cover;background-repeat: no-repeat;background-position: 50% 50%;background-color: #060000;
-  @include media-breakpoint-down(xl) {
-    background-size: cover;
-  }
-}
-.section_screen_1 {background-image: url("../images/mobile/bg-screen-1.jpg")}
+.section {background-size: cover;background-repeat: no-repeat;background-position: 50% 50%;background-color: #060000;}
+.section_screen_1 {background-image: url("../images/mobile/bg-screen-1.jpg") }
 .section_screen_2 {background-image: url("../images/mobile/bg-screen-2.jpg") }
 .section_screen_3 {background-image: url("../images/mobile/bg-screen-3.jpg") }
 .section_screen_4 {background-image: url("../images/mobile/bg-screen-4.png") }
+
+@include media-breakpoint-up(md) {
+
+}
 
 .onepage-pagination {right: inherit;left: 10px;top: 35%;
   li {margin: 0 0 36px;font-size: 0;
