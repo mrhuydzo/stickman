@@ -22,6 +22,10 @@ hr {border-top: solid 1px $color-border;border-bottom: none;margin: 10px 0;}
   @include center-block(100%);
 }
 
+.line_number2 {
+  @include line-number(2)
+}
+
 
 .scroll_mobile_h {
   display: flex !important;; /* [1] */

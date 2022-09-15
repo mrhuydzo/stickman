@@ -89,9 +89,12 @@
   &:hover {background-position: -811px -824px;}
 }
 
-.milestone_wrapper {}
-.milestone_item__template {}
-
+.milestone_wrapper {
+  .tooltip-arrow {display: none}
+  .tooltip-inner {background: transparent;color: white;padding: 0;max-width: auto;
+    .milestone_item__template {background: url("../images/pc/milestone-board.png") no-repeat 0 0;width: 251px;height: 285px;color: white}
+  }
+}
 /*Screen 2 - END*/
 
 /*Screen 3 - START*/
