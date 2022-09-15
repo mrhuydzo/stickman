@@ -143,6 +143,25 @@
 }
 #hero_intro__content {padding: 200px 0}
 
+.hero_figure {
+  #hero_figure__devil {}
+  #hero_figure__angle {}
+  #hero_figure__gold {}
+  #hero_figure__wood {}
+  #hero_figure__water {}
+  #hero_figure__fire {}
+}
+
+#hero_figure__tab {
+  li {
+    button {}
+    .hero_figure__tab1 {}
+    .hero_figure__tab2 {}
+    .hero_figure__tab3 {}
+  }
+}
+#hero_figure__content {}
+
 /*Screen 3 - END*/
 
 
