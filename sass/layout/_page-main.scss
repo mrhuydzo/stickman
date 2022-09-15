@@ -53,6 +53,10 @@
 }
 
 .bxh_icon {background:  url("../images/pc/bxh-icon.png") no-repeat 0 0;width: 196px;height: 183px;position: absolute;left: 0;top: 20%;z-index: 1}
+#modalbxh {
+  .modal-dialog {max-width: 950px}
+  .modal-content {background:  url("../images/pc/popup-thele.png") no-repeat 0 0;width: 924px;height: 504px;border: none}
+}
 /*Screen 1 - END*/
 
 
