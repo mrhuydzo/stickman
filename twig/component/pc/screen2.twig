@@ -1,6 +1,21 @@
+{%
+    set arr = [
+        {id: 1,text: '10.000 lượt'},
+        {id: 2,text: '30.000 lượt'},
+        {id: 3,text: '50.000 lượt'},
+        {id: 4,text: '100.000 lượt'},
+        {id: 5,text: '200.000 lượt'},
+    ]
+%}
 <div class="section section_screen_2">
-    <div class="container h-100 position-relative">
-
+    <div class="container h-100 position-relative d-flex align-items-center">
+        <div class="milestone">
+            {% for i in arr %}
+            <a href="javascript:void(0)" class="sprite milestone_item milestone_item_{{ i.id }}">
+                {{ item.text }}
+            </a>
+            {% endfor %}
+        </div>
         <div class="btn_bottom">
             <a href="#" class="sprite btn_thele"></a>
             <div class="sprite registered">
@@ -12,3 +27,4 @@
         </div>
     </div>
 </div>
+
