@@ -18,7 +18,7 @@
 .section_screen_3 {background-image: url("../images/pc/bg-page-3.jpg") }
 .section_screen_4 {background-image: url("../images/pc/bg-page-4.png") }
 
-.onepage-pagination {right: inherit;left: 10px;top: 25%;
+.onepage-pagination {right: inherit;left: 10px;top: 35%;
   li {margin: 0 0 36px;font-size: 0;
     &:last-child {margin: 0}
     a {background: url("../images/pc/sprite.png") no-repeat -455px -653px transparent;width: 27px;height: 30px;display: inline-block;padding: 0;font-size: 0;
@@ -51,6 +51,8 @@
 .btn_play {background-position: -188px -624px;width: 135px;height: 147px;position: absolute;top: 50%;left: 0;
   @include translate(0,-50%)
 }
+
+.bxh_icon {background:  url("../images/pc/bxh-icon.png") no-repeat 0 0;width: 196px;height: 183px;position: absolute;left: 0;top: 20%;z-index: 1}
 /*Screen 1 - END*/
 
 
@@ -71,19 +73,19 @@
 
 .milestone {background: url("../images/pc/light.png") no-repeat 0 50%;width: 1156px;height: 456px;position: relative;margin: 60px auto 0}
 .milestone_item {width: 189px;height: 180px;position: absolute}
-.milestone_item_1 {background-position: -561px 0;left: 38px;top: 138px;
+.milestone_item_0 {background-position: -561px 0;left: 38px;top: 138px;
   &:hover {background-position: -811px 0;}
 }
-.milestone_item_2 {background-position: -561px -200px;left: 245px;top: 10px;
+.milestone_item_1 {background-position: -561px -200px;left: 245px;top: 10px;
   &:hover {background-position: -811px -199px;}
 }
-.milestone_item_3 {background-position: -561px -403px;left: 490px;top: -46px;
+.milestone_item_2 {background-position: -561px -403px;left: 490px;top: -46px;
   &:hover {background-position: -811px -407px;}
 }
-.milestone_item_4 {background-position: -561px -618px;right: 215px;top: 20px;
+.milestone_item_3 {background-position: -561px -618px;right: 215px;top: 20px;
   &:hover {background-position: -811px -613px;}
 }
-.milestone_item_5 {background-position: -561px -836px;right: 10px;top: 170px;
+.milestone_item_4 {background-position: -561px -836px;right: 10px;top: 170px;
   &:hover {background-position: -811px -824px;}
 }
 

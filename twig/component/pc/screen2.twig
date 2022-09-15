@@ -1,19 +1,24 @@
 {%
     set arr = [
-        {id: 1,text: '10.000 lượt'},
-        {id: 2,text: '30.000 lượt'},
-        {id: 3,text: '50.000 lượt'},
-        {id: 4,text: '100.000 lượt'},
-        {id: 5,text: '200.000 lượt'},
+        {id: 0,text: '10.000 lượt'},
+        {id: 1,text: '30.000 lượt'},
+        {id: 2,text: '50.000 lượt'},
+        {id: 3,text: '100.000 lượt'},
+        {id: 4,text: '200.000 lượt'},
     ]
 %}
 <div class="section section_screen_2">
     <div class="container h-100 position-relative d-flex align-items-center">
         <div class="milestone">
             {% for i in arr %}
-            <a href="javascript:void(0)" class="sprite milestone_item milestone_item_{{ i.id }}">
+            <a  href="javascript:void(0)"
+                class="sprite milestone_item milestone_item_{{ i.id }}"
+                data-id="milestone_item_{{ i.id }}"
+                data-bs-html="true"
+                data-bs-toggle="tooltip">
                 {{ item.text }}
             </a>
+
             {% endfor %}
         </div>
         <div class="btn_bottom">
@@ -26,5 +31,20 @@
             <a href="#" class="sprite btn_signin"></a>
         </div>
     </div>
+</div>
+<div class="milestone_item__template" id="milestone_item__template0">
+    <h1>1 j</h1>
+</div>
+<div class="milestone_item__template" id="milestone_item__template1">
+    <h1>2 j</h1>
+</div>
+<div class="milestone_item__template" id="milestone_item__template2">
+    <h1>3 j</h1>
+</div>
+<div class="milestone_item__template" id="milestone_item__template3">
+    <h1>4 j</h1>
+</div>
+<div class="milestone_item__template" id="milestone_item__template4">
+    <h1>5 j</h1>
 </div>
 
