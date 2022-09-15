@@ -1,0 +1,51 @@
+<div class="section section_screen_1">
+    <div class="h-100" id="wrap">
+        <div class="h-100" id="outer">
+            <h1 class="logo">
+                <a href="#/" title="Stick man">
+                    <img src="images/logo.png" alt="Stick man"/>
+                </a>
+            </h1>
+            <!-- Button trigger modal -->
+            <a href="javascript:void(0)" class="bxh_icon" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+            <div class="container h-100 position-relative">
+                <a href="#" class="sprite btn_play"></a>
+            </div>
+            <div class="top_route">
+                <a href="#/" class="top_route__home sprite"></a>
+                <a href="#" target="_blank" class="top_route__facebook sprite"></a>
+            </div>
+            <div class="text-center fs_0">
+                <img src="images/mobile/fgfg.png" alt="" />
+            </div>
+{#            <div class="sprite download_grp">#}
+{#                <div class="download_grp__link">#}
+{#                    <a href="#" class="sprite link_gg_play"></a>#}
+{#                    <a href="#" class="sprite link_appstore"></a>#}
+{#                    <a href="#" class="sprite link_apk"></a>#}
+{#                </div>#}
+{#                <a href="#" class="join_grp fs-0">Join group</a>#}
+{#            </div>#}
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    let outer = document.getElementById('outer'),
+        wrapper = document.getElementById('wrap'),
+        maxWidth  = outer.clientWidth,
+        maxHeight = outer.clientHeight;
+    window.addEventListener("resize", resize);
+    resize();
+    function resize(){
+        let scale,
+        width = window.innerWidth,
+        height = window.innerHeight,
+        isMax = width >= maxWidth && height >= maxHeight;
+
+        scale = Math.min(width/maxWidth, height/maxHeight);
+        outer.style.transform = isMax?'':'scale(' + scale + ')';
+        wrapper.style.width = isMax?'':maxWidth * scale;
+        wrapper.style.height = isMax?'':maxHeight * scale;
+    }
+</script>

@@ -5,8 +5,6 @@
 
 
 // Base stuff
-//@import "base/_typography";
-
 @import "helpers/_mixins";
 @import "helpers/_functions";
 @import "helpers/_extends";
@@ -17,16 +15,9 @@
 @import "helpers/_mixins";
 
 // Components and modules
-//@import "partials/_form";
-//@import "partials/_fields";
-//@import "partials/_button";
-//@import "partials/_table";
-//@import "partials/_modal";
-//@import "components/_preloader";
 
 
 // Layout related stylesheets
-
 @import "layout/_page-main";
 
 

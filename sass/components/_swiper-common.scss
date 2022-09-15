@@ -1,9 +1,0 @@
-.swiper_common {
-	.swiper {
-		.swiper-pagination {position: static;margin: 40px 0 0}
-		.swiper-pagination-bullet {background: $blue;opacity: 1;border-radius: 8px;
-			@include transition(all .3s ease);
-			&.swiper-pagination-bullet-active {background: $color-text;width: 24px}
-		}
-	}
-}
