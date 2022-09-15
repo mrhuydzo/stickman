@@ -52,7 +52,7 @@
   @include translate(0,-50%)
 }
 
-.bxh_icon {background:  url("../images/pc/bxh-icon.png") no-repeat 0 0;width: 196px;height: 183px;position: absolute;left: 0;top: 20%;z-index: 1}
+.bxh_icon {background-position: -1104px -698px;width: 196px;height: 183px;position: absolute;left: 0;top: 20%;z-index: 1}
 #modalbxh {
   .modal-dialog {max-width: 950px}
   .modal-content {background:  url("../images/pc/popup-thele.png") no-repeat 0 0;width: 924px;height: 504px;border: none}
@@ -95,8 +95,18 @@
 
 .milestone_wrapper {
   .tooltip-arrow {display: none}
-  .tooltip-inner {background: transparent;color: white;padding: 0;max-width: auto;
-    .milestone_item__template {background: url("../images/pc/milestone-board.png") no-repeat 0 0;width: 251px;height: 285px;color: white}
+  .tooltip-inner {background: transparent;color: white;padding: 0;max-width: inherit;
+    .milestone_item__template {background: url("../images/pc/milestone-board.png") no-repeat 0 0;width: 251px;height: 285px;color: white;padding: 62px 16px 0 16px;text-align: left;font-size: 12px}
+    .milestone_item__bullet {background-position: -408px -739px;width: 38px;height: 38px;}
+  }
+}
+
+#modal_rules {
+  .modal-dialog {max-width: 950px}
+  .modal-content {background:  url("../images/pc/popup-thele.png") no-repeat 0 0;width: 924px;height: 504px;border: none;margin: 0 auto;padding: 100px 60px 60px}
+  .modal_rules__inner {overflow-y: scroll;height: 100%;color: #d1602b;font-size: 20px;padding: 0 10px 0 0}
+  .btn-close {background-position: -36px -733px;width: 57px;height: 57px;position: absolute;right: -50px;top: -10px;
+    &:hover {opacity: .8}
   }
 }
 /*Screen 2 - END*/
@@ -134,5 +144,23 @@
 #hero_intro__content {padding: 200px 0}
 
 /*Screen 3 - END*/
+
+
+
+/*Screen 4 - START*/
+.card_selector__tab {border: none;
+  li {margin: 0 0 12px;
+    button {background-color: transparent;font-size: 0;text-indent: -9999em;width: 280px;height: 90px;border: none;outline: none}
+  }
+  .card_selector__item1 {background-position: -1020px 0;}
+  .card_selector__item2 {background-position: -1020px -104px;}
+  .card_selector__item3 {background-position: -1020px -207px;}
+  .card_selector__item4 {background-position: -1020px -311px;}
+  .card_selector__item5 {background-position: -1020px -414px;}
+  .card_selector__item6 {background-position: -1020px -518px;}
+}
+.card_selector__content {}
+
+/*Screen 4 - END*/
 
 

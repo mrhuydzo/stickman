@@ -1,4 +1,38 @@
+{%
+    set arr = [
+        {id: '1',title: 'Hẻm vực lãng quên', active: 'active',id: "tab-1",img: 'hemvuclangquen.png',show: 'show'},
+        {id: '2',title: 'Thời không quyết đấu',active: '',id: "tab-2",img: 'thoikhongquyetdau.png',show: ''},
+        {id: '3',title: 'Bí hải tầm bảo',active: '',id: "tab-3",img: 'Bihaitambao.png',show: ''},
+        {id: '4',title: 'Trúc linh bí cảnh',active: '',id: "tab-4",img: 'truclinhbicanh.png',show: ''},
+        {id: '5',title: 'Giải đấu bang',active: '',id: "tab-5",img: 'giaidaubang.png',show: ''},
+        {id: '6',title: 'Giải đấu vinh diệu',active: '',id: "tab-6",img: 'giaidauvinhdieu.png',show: ''},
+    ]
+%}
 <div class="section section_screen_4">
+    <div class="container position-relative h-100">
+        <div class="row align-items-center py-8">
+            <div class="col-lg-5 offset-lg-2">
+                <div class="tab-content card_selector__content">
+                    {% for i in arr %}
+                    <div class="tab-pane fade {{i.show}} {{i.active}}" id="card_selector__content{{ i.id }}">
+                        <div class="fs_0 text-end">
+                            <img src="images/hero/card/{{i.img}}" alt="{{i.title}}" />
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <ul class="nav nav-tabs card_selector__tab">
+                    {% for i in arr %}
+                    <li>
+                        <button class="sprite card_selector__item{{i.id}} {{i.active}}" data-bs-toggle="tab" data-bs-target="#card_selector__content{{i.id }}">{{i.title}}</button>
+                    </li>
+                    {%endfor%}
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="footer bg-white">
         <div class="container">
             <div class="row">
