@@ -261,9 +261,10 @@
         let ide = `milestone_item__template${index}`
         var tooltipTriggerTemplate = document.getElementById(ide)
         return new bootstrap.Tooltip(tooltipTriggerEl, {
-                customClass: 'milestone_bg',
+                customClass: 'milestone_wrapper',
                 placement: 'right',
                 html: true,
+                trigger: 'click',
                 title: tooltipTriggerTemplate
             }
         )
