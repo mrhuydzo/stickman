@@ -122,22 +122,22 @@
     @include transition(opacity .3s ease);
     &:hover {opacity: 1;}
   }
-  .hero_type1 {background-position: -14px -827px;
+  .hero_type_gold {background-position: -14px -827px;
     &.active {background-position: -13px -909px;}
   }
-  .hero_type2 {background-position: -99px -828px;
+  .hero_type_fire {background-position: -99px -828px;
     &.active {background-position: -93px -909px;}
   }
-  .hero_type3 {background-position: -175px -826px;
+  .hero_type_wood {background-position: -175px -826px;
     &.active {background-position: -174px -907px;}
   }
-  .hero_type4 {background-position: -254px -828px;
+  .hero_type_water {background-position: -254px -828px;
     &.active {background-position: -255px -909px;}
   }
-  .hero_type5 {background-position: -337px -828px;
+  .hero_type_angel {background-position: -337px -828px;
     &.active {background-position: -337px -910px;}
   }
-  .hero_type6 {background-position: -418px -830px;
+  .hero_type_devil {background-position: -418px -830px;
     &.active {background-position: -422px -911px;}
   }
 }
@@ -147,9 +147,9 @@ $thumbs: (
         "1" "devil" "../images/hero/thumb/1_acquy1.png" "../images/hero/thumb/1_acquy1_active.png",
         "2" "devil" "../images/hero/thumb/1_acquy2.png" "../images/hero/thumb/1_acquy2_active.png",
         "3" "devil" "../images/hero/thumb/1_acquy3.png" "../images/hero/thumb/1_acquy3_active.png",
-        "1" "angle" "../images/hero/thumb/2_thienthan1.png" "../images/hero/thumb/2_thienthan1_active.png",
-        "2" "angle" "../images/hero/thumb/2_thienthan2.png" "../images/hero/thumb/2_thienthan2_active.png",
-        "3" "angle" "../images/hero/thumb/2_thienthan3.png" "../images/hero/thumb/2_thienthan3_active.png",
+        "1" "angel" "../images/hero/thumb/2_thienthan1.png" "../images/hero/thumb/2_thienthan1_active.png",
+        "2" "angel" "../images/hero/thumb/2_thienthan2.png" "../images/hero/thumb/2_thienthan2_active.png",
+        "3" "angel" "../images/hero/thumb/2_thienthan3.png" "../images/hero/thumb/2_thienthan3_active.png",
         "1" "gold" "../images/hero/thumb/3_kim1.png" "../images/hero/thumb/3_kim1_active.png",
         "2" "gold" "../images/hero/thumb/3_kim2.png" "../images/hero/thumb/3_kim2_active.png",
         "3" "gold" "../images/hero/thumb/3_kim3.png" "../images/hero/thumb/3_kim3_active.png",
@@ -158,7 +158,7 @@ $thumbs: (
         "3" "wood" "../images/hero/thumb/4_moc3.png" "../images/hero/thumb/4_moc3_active.png",
         "1" "water" "../images/hero/thumb/5_thuy1.png" "../images/hero/thumb/5_thuy1_active.png",
         "2" "water" "../images/hero/thumb/5_thuy2.png" "../images/hero/thumb/5_thuy2_active.png",
-        "3" "water" "../images/hero/thumb/5_thuy2.png" "../images/hero/thumb/5_thuy3_active.png",
+        "3" "water" "../images/hero/thumb/5_thuy3.png" "../images/hero/thumb/5_thuy3_active.png",
         "1" "fire" "../images/hero/thumb/6_hoa1.png" "../images/hero/thumb/6_hoa1_active.png",
         "2" "fire" "../images/hero/thumb/6_hoa2.png" "../images/hero/thumb/6_hoa2_active.png",
         "3" "fire" "../images/hero/thumb/6_hoa3.png" "../images/hero/thumb/6_hoa3_active.png",
@@ -179,6 +179,10 @@ $thumbs: (
       &.active {background-image: url($active)}
     }
   }
+}
+
+.hero_clip {background: url("../images/pc/bg-clip.png") no-repeat 50% 50% #e67d50;width: 353px;height: 633px;padding: 5px;
+  box-shadow: 0 0 15px 5px rgba(#e67d50, .5);
 }
 
 /*Screen 3 - END*/

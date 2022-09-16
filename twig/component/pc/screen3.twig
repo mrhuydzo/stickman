@@ -1,11 +1,11 @@
 
 {% set heroType = [
-    {id: 1,name: '',active: 'active'},
-    {id: 2,name: '',active: ''},
-    {id: 3,name: '',active: ''},
-    {id: 4,name: '',active: ''},
-    {id: 5,name: '',active: ''},
-    {id: 6,name: '',active: ''},
+    {id: 1,name: 'gold',active: 'active'},
+    {id: 2,name: 'fire',active: ''},
+    {id: 3,name: 'wood',active: ''},
+    {id: 4,name: 'water',active: ''},
+    {id: 5,name: 'angel',active: ''},
+    {id: 6,name: 'devil',active: ''},
 ] %}
 
 {%
@@ -56,50 +56,29 @@
     <div class="container h-100 position-relative">
         <div class="hero_intro h-100">
             <div class="tab-content h-100" id="hero_intro__content">
-                <div class="tab-pane fade show active" id="hero_type1">
+                <!--KIM START-->
+                <div class="tab-pane fade show active" id="hero_type_gold">
                     <div class="hero_figure">
-                        <ul class="nav nav-tabs mb-3 border-0" id="hero_devil__tab">
-                            {% for i in heroAcquy %}
-                            <li>
-                                <button class="hero_devil__tab{{ i.id}} {{i.active}}" data-bs-toggle="tab" data-bs-target="#hero_devil__tab{{i.id}}" type="button">{{i.title}}</button>
-                            </li>
-                            {% endfor %}
-                        </ul>
-                        <div class="tab-content">
-                            {% for i in heroAcquy %}
-                            <div class="tab-pane fade {{i.show}} {{i.active}}" id="hero_devil__tab{{i.id}}">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-5 offset-3">
-                                            <img src="images/hero/tuong/{{i.img}}.png" alt="{{i.tile}}" />
-                                        </div>
-                                        <div class="col-4 text-end"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            {% endfor %}
-                        </div>
-                    </div>
-                </div>
-
-                <div class="tab-pane fade" id="hero_type2">
-                    <div class="hero_figure">
-                        <ul class="nav nav-tabs mb-3 border-0" id="hero_angle__tab">
-                            {% for i in heroThienthan %}
+                        <ul class="nav nav-tabs mb-3 border-0" id="hero_gold__tab">
+                            {% for i in heroKim %}
                                 <li>
-                                    <button class="hero_angle__tab{{ i.id}} {{i.active}}" data-bs-toggle="tab" data-bs-target="#hero_angle__tab{{i.id}}" type="button">{{i.title}}</button>
+                                    <button class="hero_gold__tab{{ i.id}} {{i.active}}" data-bs-toggle="tab" data-bs-target="#hero_gold__tab{{i.id}}" type="button">{{i.title}}</button>
                                 </li>
                             {% endfor %}
                         </ul>
                         <div class="tab-content">
-                            {% for i in heroThienthan %}
-                                <div class="tab-pane fade {{i.show}} {{i.active}}" id="hero_angle__tab{{i.id}}">
+                            {% for i in heroKim %}
+                                <div class="tab-pane fade {{i.show}} {{i.active}}" id="hero_gold__tab{{i.id}}">
                                     <div class="container">
                                         <div class="row">
                                             <div class="col-5 offset-3">
-                                                <img src="images/hero/tuong/{{i.img}}.png" alt="{{i.tile}}" />
+                                                <img src="images/hero/tuong/{{i.img}}.png" alt="{{i.title}}" class="animate__animated animate__slideInRight" />
                                             </div>
-                                            <div class="col-4 text-end"></div>
+                                            <div class="col-4 d-flex justify-content-end">
+                                                <div class="hero_clip">
+                                                    <iframe width="343" height="623" src="https://www.youtube.com/embed/_wVvuSkTaY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -107,33 +86,42 @@
                         </div>
                     </div>
                 </div>
+                <!--KIM END-->
 
-               <div class="tab-pane fade" id="hero_type3">
-                   <div class="hero_figure">
-                       <ul class="nav nav-tabs mb-3 border-0" id="hero_gold__tab">
-                           {% for i in heroKim %}
-                               <li>
-                                   <button class="hero_gold__tab{{ i.id}} {{i.active}}" data-bs-toggle="tab" data-bs-target="#hero_gold__tab{{i.id}}" type="button">{{i.title}}</button>
-                               </li>
-                           {% endfor %}
-                       </ul>
-                       <div class="tab-content">
-                           {% for i in heroKim %}
-                               <div class="tab-pane fade {{i.show}} {{i.active}}" id="hero_gold__tab{{i.id}}">
-                                   <div class="container">
-                                       <div class="row">
-                                           <div class="col-5 offset-3">
-                                               <img src="images/hero/tuong/{{i.img}}.png" alt="{{i.tile}}" />
-                                           </div>
-                                           <div class="col-4 text-end"></div>
-                                       </div>
-                                   </div>
-                               </div>
-                           {% endfor %}
-                       </div>
-                   </div>
+                <!--HOA START-->
+                <div class="tab-pane fade" id="hero_type_fire">
+                    <div class="hero_figure">
+                        <ul class="nav nav-tabs mb-3 border-0" id="hero_fire__tab">
+                            {% for i in heroHoa %}
+                                <li>
+                                    <button class="hero_angle__tab{{ i.id}} {{i.active}}" data-bs-toggle="tab" data-bs-target="#hero_fire__tab{{i.id}}" type="button">{{i.title}}</button>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                        <div class="tab-content">
+                            {% for i in heroHoa %}
+                                <div class="tab-pane fade {{i.show}} {{i.active}}" id="hero_fire__tab{{i.id}}">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-5 offset-3">
+                                                <img src="images/hero/tuong/{{i.img}}.png" alt="{{i.title}}" class="animate__animated animate__slideInRight" />
+                                            </div>
+                                            <div class="col-4 d-flex justify-content-end">
+                                                <div class="hero_clip">
+                                                    <iframe width="343" height="623" src="https://www.youtube.com/embed/_wVvuSkTaY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
                 </div>
-                <div class="tab-pane fade" id="hero_type4">
+                <!--HOA END-->
+
+                <!--MOC START-->
+                <div class="tab-pane fade" id="hero_type_wood">
                     <div class="hero_figure">
                         <ul class="nav nav-tabs mb-3 border-0" id="hero_wood__tab">
                             {% for i in heroMoc %}
@@ -148,9 +136,13 @@
                                     <div class="container">
                                         <div class="row">
                                             <div class="col-5 offset-3">
-                                                <img src="images/hero/tuong/{{i.img}}.png" alt="{{i.tile}}" />
+                                                <img src="images/hero/tuong/{{i.img}}.png" alt="{{i.title}}" class="animate__animated animate__slideInRight" />
                                             </div>
-                                            <div class="col-4 text-end"></div>
+                                            <div class="col-4 d-flex justify-content-end">
+                                                <div class="hero_clip">
+                                                    <iframe width="343" height="623" src="https://www.youtube.com/embed/_wVvuSkTaY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -158,7 +150,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="hero_type5">
+                <!--MOC END-->
+
+                <!--THUY START-->
+                <div class="tab-pane fade" id="hero_type_water">
                     <div class="hero_figure">
                         <ul class="nav nav-tabs mb-3 border-0" id="hero_water__tab">
                             {% for i in heroThuy %}
@@ -173,9 +168,13 @@
                                     <div class="container">
                                         <div class="row">
                                             <div class="col-5 offset-3">
-                                                <img src="images/hero/tuong/{{i.img}}.png" alt="{{i.tile}}" />
+                                                <img src="images/hero/tuong/{{i.img}}.png" alt="{{i.title}}" class="animate__animated animate__slideInRight" />
                                             </div>
-                                            <div class="col-4 text-end"></div>
+                                            <div class="col-4 d-flex justify-content-end">
+                                                <div class="hero_clip">
+                                                    <iframe width="343" height="623" src="https://www.youtube.com/embed/_wVvuSkTaY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -183,24 +182,31 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="hero_type6">
+                <!--THUY END-->
+
+                <!--THIENTHAN START-->
+                <div class="tab-pane fade" id="hero_type_angel">
                     <div class="hero_figure">
-                        <ul class="nav nav-tabs mb-3 border-0" id="hero_fire__tab">
-                            {% for i in heroHoa %}
+                        <ul class="nav nav-tabs mb-3 border-0" id="hero_angel__tab">
+                            {% for i in heroThienthan %}
                                 <li>
-                                    <button class="hero_fire__tab{{ i.id}} {{i.active}}" data-bs-toggle="tab" data-bs-target="#hero_fire__tab{{i.id}}" type="button">{{i.title}}</button>
+                                    <button class="hero_angel__tab{{ i.id}} {{i.active}}" data-bs-toggle="tab" data-bs-target="#hero_angel__tab{{i.id}}" type="button">{{i.title}}</button>
                                 </li>
                             {% endfor %}
                         </ul>
                         <div class="tab-content">
-                            {% for i in heroHoa %}
-                                <div class="tab-pane fade {{i.show}} {{i.active}}" id="hero_fire__tab{{i.id}}">
+                            {% for i in heroThienthan %}
+                                <div class="tab-pane fade {{i.show}} {{i.active}}" id="hero_angel__tab{{i.id}}">
                                     <div class="container">
                                         <div class="row">
                                             <div class="col-5 offset-3">
-                                                <img src="images/hero/tuong/{{i.img}}.png" alt="{{i.tile}}" />
+                                                <img src="images/hero/tuong/{{i.img}}.png" alt="{{i.title}}" class="animate__animated animate__slideInRight" />
                                             </div>
-                                            <div class="col-4 text-end"></div>
+                                            <div class="col-4 d-flex justify-content-end">
+                                                <div class="hero_clip">
+                                                    <iframe width="343" height="623" src="https://www.youtube.com/embed/_wVvuSkTaY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -208,11 +214,45 @@
                         </div>
                     </div>
                 </div>
+                <!--THIENTHAN END-->
+
+                <!--ACQUY START-->
+                <div class="tab-pane fade" id="hero_type_devil">
+                    <div class="hero_figure">
+                        <ul class="nav nav-tabs mb-3 border-0" id="hero_devil__tab">
+                            {% for i in heroAcquy %}
+                                <li>
+                                    <button class="hero_devil__tab{{ i.id}} {{i.active}}" data-bs-toggle="tab" data-bs-target="#hero_devil__tab{{i.id}}" type="button">{{i.title}}</button>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                        <div class="tab-content">
+                            {% for i in heroAcquy %}
+                                <div class="tab-pane fade {{i.show}} {{i.active}}" id="hero_devil__tab{{i.id}}">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-5 offset-3">
+                                                <img src="images/hero/tuong/{{i.img}}.png" alt="{{i.title}}" class="animate__animated animate__slideInRight" />
+                                            </div>
+                                            <div class="col-4 d-flex justify-content-end">
+                                                <div class="hero_clip">
+                                                    <iframe width="343" height="623" src="https://www.youtube.com/embed/_wVvuSkTaY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <!--ACQUY END-->
+
             </div>
             <ul class="nav nav-tabs" id="hero_intro__tab">
                 {% for i in heroType %}
                     <li>
-                        <button class="hero_type{{i.id}} sprite {{i.active}}" data-bs-toggle="tab" data-bs-target="#hero_type{{i.id}}" type="button"></button>
+                        <button class="hero_type_{{i.name}} sprite {{i.active}}" data-bs-toggle="tab" data-bs-target="#hero_type_{{i.name}}" type="button"></button>
                     </li>
                 {% endfor %}
             </ul>
