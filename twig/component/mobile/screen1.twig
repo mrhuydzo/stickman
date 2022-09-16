@@ -1,5 +1,5 @@
 <div class="section section_screen_1">
-    <div class="h-100" id="outer">
+    <div class="h-100">
         <h1 class="logo">
             <a href="#/" title="Stick man">
                 <img src="images/logo.png" alt="Stick man"/>
@@ -11,7 +11,7 @@
             <a href="#" class="sprite btn_play"></a>
         </div>
         <div class="top_route">
-            <a href="#/" class="top_route__home sprite"></a>
+            <a href="#" class="top_route__home sprite"></a>
             <a href="#" target="_blank" class="top_route__facebook sprite"></a>
         </div>
         <div class="text-center fs_0">
@@ -28,37 +28,37 @@
     </div>
 </div>
 
-<script type="text/javascript">
-    (function(global) {
-        function scaleAmountNeededToFit(el, margin = 0) {
-            const parentSize = {
-                width: el.parentElement.clientWidth - margin * 2,
-                height: el.parentElement.clientHeight - margin * 2
-            };
+{#<script type="text/javascript">#}
+{#    (function(global) {#}
+{#        function scaleAmountNeededToFit(el, margin = 0) {#}
+{#            const parentSize = {#}
+{#                width: el.parentElement.clientWidth - margin * 2,#}
+{#                height: el.parentElement.clientHeight - margin * 2#}
+{#            };#}
 
-            return Math.min(parentSize.width / el.clientWidth,
-                parentSize.height / el.clientHeight);
-        }
+{#            return Math.min(parentSize.width / el.clientWidth,#}
+{#                parentSize.height / el.clientHeight);#}
+{#        }#}
 
-        function fitToParent(element, margin) {
-            const scale = scaleAmountNeededToFit(element, margin);
-            element.style.transformOrigin = "0 0";
-            element.style.transform = `translate(${margin}px, ${margin}px) scale(${scale})`;
-        }
+{#        function fitToParent(element, margin) {#}
+{#            const scale = scaleAmountNeededToFit(element, margin);#}
+{#            element.style.transformOrigin = "0 0";#}
+{#            element.style.transform = `translate(${margin}px, ${margin}px) scale(${scale})`;#}
+{#        }#}
 
-        global.fitToParent = fitToParent;
-    })(this);
+{#        global.fitToParent = fitToParent;#}
+{#    })(this);#}
 
-    (function(window) {
-        function main() {
-            const margin = 10;
-            requestAnimationFrame(function fitToParentOnResize() {
-                fitToParent(document.getElementById('outer'), margin);
-            });
-        }
+{#    (function(window) {#}
+{#        function main() {#}
+{#            const margin = 10;#}
+{#            requestAnimationFrame(function fitToParentOnResize() {#}
+{#                fitToParent(document.getElementById('outer'), margin);#}
+{#            });#}
+{#        }#}
 
-        window.addEventListener("DOMContentLoaded", main);
-        window.addEventListener("resize", main);
-    })(this);
+{#        window.addEventListener("DOMContentLoaded", main);#}
+{#        window.addEventListener("resize", main);#}
+{#    })(this);#}
 
-</script>
+{#</script>#}

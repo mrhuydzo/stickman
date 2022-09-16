@@ -1,9 +1,10 @@
-.sprite {background-image: url("../images/mobile/sprite.png");background-repeat: no-repeat;background-position: 0 0;font-size: 0;display: inline-block}
+.sprite {background-image: url("../images/pc/sprite.png");background-repeat: no-repeat;background-position: 0 0;font-size: 0;display: inline-block}
 
 .page_main {}
 .page_body {}
 
-.logo {margin: 0;display: inline-block;position: absolute;left: 40px;top: 40px;
+.logo {margin: 0;display: inline-block;position: absolute;left: 50%;top: 20px;
+  @include translate(-50%,0);
   a {display: inline-block;font-size: 0;}
   img {width: 280px}
 }
@@ -21,7 +22,7 @@
 .onepage-pagination {right: inherit;left: 10px;top: 35%;
   li {margin: 0 0 36px;font-size: 0;
     &:last-child {margin: 0}
-    a {background: url("../images/mobile/sprite.png") no-repeat -455px -653px transparent;width: 27px;height: 30px;display: inline-block;padding: 0;font-size: 0;
+    a {background: url("../images/pc/sprite.png") no-repeat -455px -653px transparent;width: 27px;height: 30px;display: inline-block;padding: 0;font-size: 0;
       &::before {content: none}
       &.active {background-position: -402px -653px;}
     }
@@ -71,7 +72,13 @@
   .registered {background-position: -207px -477px;width: 322px;height: 122px;text-align: center;color: black;padding: 28px 0 0;line-height: 24px;}
 }
 
-.milestone {background: url("../images/mobile/light.png") no-repeat 0 50%;width: 1156px;height: 456px;position: relative;margin: 60px auto 0}
+.milestone {    background: url(../images/mobile/light.png) no-repeat 0 50%;
+  width: 1156px;
+  height: 456px;
+  position: absolute;
+  margin: 60px auto 0;
+  left: -88%;
+  top: 0;}
 .milestone_item {width: 189px;height: 180px;position: absolute}
 .milestone_item_0 {background-position: -561px 0;left: 38px;top: 138px;
   &:hover {background-position: -811px 0;}

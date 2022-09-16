@@ -62,7 +62,32 @@
             // the browser's width is less than 600, the fallback will kick in.
             direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".
         });
+
+        var $win = $(window);
+        var $lay = $('.milestone');
+        var baseSize = {
+            w: 1156
+        }
+        function updateScale1() {
+            var ww = $win.width();
+            var newScale = 1;
+            // compare ratios
+            if (ww < baseSize.w) { // tall ratio
+                newScale = ww / baseSize.w;
+            }
+            $lay.css('transform', 'scale(' + newScale + ')');
+            //Make wrapper height scale
+            $('.wrapper').css('height', $lay.height() * newScale);
+            console.log(newScale);
+            //resizeObserver.observe(document.querySelector('.wrapper'))
+        }
+        //$(window).load(updateScale1);
+        updateScale1();
+
+
     })
+
+
 
 </script>
 </body>
