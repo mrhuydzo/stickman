@@ -15,4 +15,15 @@ $(document).ready(function () {
         // the browser's width is less than 600, the fallback will kick in.
         direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".
     });
+
+    // var $videoSrc;
+    // $('.bxh_icon').click(function() {
+    //     $videoSrc = $(this).data( "data-target" );
+    // });
+    // // when the modal is opened autoplay it
+    // $('#modal_trailer').on('shown.bs.modal', function (e) {
+    //
+    // // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+    //     $("#modal_trailer").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" );
+    // })
 })
