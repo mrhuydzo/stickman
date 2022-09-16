@@ -55,9 +55,18 @@
 }
 
 .bxh_icon {background-position: -1104px -698px;width: 196px;height: 183px;position: absolute;left: 0;top: 20%;z-index: 1}
-#modalbxh {
+#modal_chart {
   .modal-dialog {max-width: 950px}
-  .modal-content {background:  url("../images/pc/popup-thele.png") no-repeat 0 0;width: 924px;height: 504px;border: none}
+  .modal-content {background:  url("../images/pc/popup-chart.png") no-repeat 0 0;width: 924px;height: 504px;border: none;margin: 0 auto;padding: 100px 60px 60px}
+  .modal_chart__inner {overflow-y: scroll;height: 100%;color: #960a0f;padding: 0 10px 0 0;font-weight: bold;
+    table {text-align: center;width: 100%;border: none;
+      th {padding: 8px;font-size: 20px;font-weight: bold}
+      td {padding: 4px;font-size: 16px;}
+    }
+  }
+  .btn-close {background-position: -36px -733px;width: 57px;height: 57px;position: absolute;right: -50px;top: -10px;
+    &:hover {opacity: .8}
+  }
 }
 /*Screen 1 - END*/
 

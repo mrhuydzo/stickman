@@ -1,0 +1,25 @@
+<div class="modal fade" id="modal_chart">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <a href="javascript:void(0)"  class="sprite btn-close" data-bs-dismiss="modal">xx</a>
+            <div class="modal_chart__inner">
+                <table>
+                    <tr>
+                        <th class="text-center">Hạng</th>
+                        <th class="text-center">Tên nhân vật</th>
+                        <th class="text-center">Server</th>
+                        <th class="text-center">Lực chiến</th>
+                    </tr>
+                    {% for i in 0..9 %}
+                        <tr>
+                            <td><span>{{ i + 1 }}</span></td>
+                            <td><span>Nguyễn Quang Huy{{ i  + 1 }}</span></td>
+                            <td><span>{{ i  + random(0,10) }}</span></td>
+                            <td><span>{{ i  + random(0,1000) }}</span></td>
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
