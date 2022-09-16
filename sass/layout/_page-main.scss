@@ -114,7 +114,7 @@
 /*Screen 3 - START*/
 
 #hero_intro__tab {border: none;position: absolute;bottom: 10%;left: 50%;font-size: 0;
-  @include translate(-70%,0);
+  @include translate(-80%,0);
   li {
     + li {margin: 0 0 0 12px}
   }
@@ -166,7 +166,7 @@ $thumbs: (
 
 
 .hero_figure {
-  ul {display: flex;flex-direction: column;position: absolute;left: 10%;top: 30%;
+  ul {display: flex;flex-direction: column;position: absolute;left: 5%;top: 30%;
     li {
       + li {margin: 10px 0 0}
       button {background-color: transparent;background-repeat: no-repeat;border: none;padding: 0;width: 96px;height: 86px;font-size: 0}
