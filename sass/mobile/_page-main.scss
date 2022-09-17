@@ -37,8 +37,8 @@
   a {width: 48px;height: 48px;
     + a {margin-left: 10px}
   }
-  .top_route__home {background-position: -217px -674px;}
-  .top_route__facebook {background-position: -287px -674px;}
+  .top_route__home {background-position: -194px -519px;}
+  .top_route__facebook {background-position: -264px -519px;}
 }
 
 @include media-breakpoint-up(md) {
@@ -55,7 +55,7 @@
 }
 .join_grp {display: block;width: 100%;height: 70px;margin: 20px 0 0;}
 
-.btn_play {background-position: -9px -613px;width: 157px;height: 169px;position: absolute;top: 26%;left: 50%;
+.btn_play {background-position: -9px -451px;width: 157px;height: 169px;position: absolute;top: 26%;left: 50%;
   @include translate(-50%,-20%);
 }
 
@@ -113,35 +113,81 @@
 
 /*Screen 3 - START*/
 
-#hero_intro__tab {border: none;position: absolute;bottom: 5%;left: 50%;font-size: 0;
-  @include translate(-70%,0);
+#hero_intro__tab {border: none;position: absolute;bottom: 0;left: 50%;font-size: 0;
+  @include translate(-50%,0);display: flex;justify-content: center;width: 100%;
   li {
-    + li {margin: 0 0 0 12px}
+    + li {margin: 0 0 0 22px}
+    @include media-breakpoint-up(md) {
+      + li {margin: 0 0 0 12px}
+    }
   }
   button {background-color: transparent;padding: 0;width: 69px;height: 76px;border: none;opacity: .8;
     @include transition(opacity .3s ease);
     &:hover {opacity: 1;}
   }
-  .hero_type1 {background-position: -14px -827px;
-    &.active {background-position: -13px -909px;}
+  .hero_type_gold {background-position: -2px -645px;
+    &.active {background-position: 0 -722px;}
   }
-  .hero_type2 {background-position: -99px -828px;
-    &.active {background-position: -93px -909px;}
+  .hero_type_fire {background-position: -87px -645px;
+  // -87px -646px
+    &.active {background-position: -80px -722px;}
   }
-  .hero_type3 {background-position: -175px -826px;
-    &.active {background-position: -174px -907px;}
+  .hero_type_wood {background-position: -164px -645px;
+    &.active {background-position: -161px -720px;}
   }
-  .hero_type4 {background-position: -254px -828px;
-    &.active {background-position: -255px -909px;}
+  .hero_type_water {background-position: -242px -645px;
+    &.active {background-position: -242px -722px;}
   }
-  .hero_type5 {background-position: -337px -828px;
-    &.active {background-position: -337px -910px;}
+  .hero_type_angel {background-position: -325px -645px;
+    &.active {background-position: -324px -723px;}
   }
-  .hero_type6 {background-position: -418px -830px;
-    &.active {background-position: -422px -911px;}
+  .hero_type_devil {background-position: -405px -645px;
+    &.active {background-position: -409px -724px;}
+  }
+
+  @include media-breakpoint-up(md) {
+    bottom: 5%;
   }
 }
-#hero_intro__content {padding: 200px 0}
+#hero_intro__content {padding: 150px 0 100px}
+
+$thumbs: (
+        "1" "devil" "../images/hero/thumb/1_acquy1.png" "../images/hero/thumb/1_acquy1_active.png",
+        "2" "devil" "../images/hero/thumb/1_acquy2.png" "../images/hero/thumb/1_acquy2_active.png",
+        "3" "devil" "../images/hero/thumb/1_acquy3.png" "../images/hero/thumb/1_acquy3_active.png",
+        "1" "angel" "../images/hero/thumb/2_thienthan1.png" "../images/hero/thumb/2_thienthan1_active.png",
+        "2" "angel" "../images/hero/thumb/2_thienthan2.png" "../images/hero/thumb/2_thienthan2_active.png",
+        "3" "angel" "../images/hero/thumb/2_thienthan3.png" "../images/hero/thumb/2_thienthan3_active.png",
+        "1" "gold" "../images/hero/thumb/3_kim1.png" "../images/hero/thumb/3_kim1_active.png",
+        "2" "gold" "../images/hero/thumb/3_kim2.png" "../images/hero/thumb/3_kim2_active.png",
+        "3" "gold" "../images/hero/thumb/3_kim3.png" "../images/hero/thumb/3_kim3_active.png",
+        "1" "wood" "../images/hero/thumb/4_moc1.png" "../images/hero/thumb/4_moc1_active.png",
+        "2" "wood" "../images/hero/thumb/4_moc2.png" "../images/hero/thumb/4_moc2_active.png",
+        "3" "wood" "../images/hero/thumb/4_moc3.png" "../images/hero/thumb/4_moc3_active.png",
+        "1" "water" "../images/hero/thumb/5_thuy1.png" "../images/hero/thumb/5_thuy1_active.png",
+        "2" "water" "../images/hero/thumb/5_thuy2.png" "../images/hero/thumb/5_thuy2_active.png",
+        "3" "water" "../images/hero/thumb/5_thuy3.png" "../images/hero/thumb/5_thuy3_active.png",
+        "1" "fire" "../images/hero/thumb/6_hoa1.png" "../images/hero/thumb/6_hoa1_active.png",
+        "2" "fire" "../images/hero/thumb/6_hoa2.png" "../images/hero/thumb/6_hoa2_active.png",
+        "3" "fire" "../images/hero/thumb/6_hoa3.png" "../images/hero/thumb/6_hoa3_active.png",
+);
+
+
+.hero_figure {
+  ul {display: flex;position: absolute;left: 0;top: 14%;margin: 0;width: 100%;justify-content: center;
+    li {
+      button {background-color: transparent;background-repeat: no-repeat;border: none;padding: 0;width: 96px;height: 86px;font-size: 0}
+    }
+  }
+
+  @each $number, $name, $normal, $active in $thumbs {
+    .hero_#{$name}__tab#{$number} {
+      background-image: url($normal);
+      &.active {background-image: url($active)}
+    }
+  }
+}
+
 
 /*Screen 3 - END*/
 
@@ -166,7 +212,7 @@
 }
 .card_selector__content {}
 .modal_card {
-  .btn-close {background-position: -281px -581px;width: 64px;height: 64px;position: absolute;right: -10px;top: -10px;}
+  .btn-close {background-position: -340px -511px;width: 64px;height: 64px;position: absolute;right: -10px;top: -10px;}
   .modal-content {background: transparent;border: none;
     img {border-radius: 12px}
   }
