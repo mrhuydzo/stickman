@@ -30,11 +30,9 @@
     <meta name=googlebot content="noodp,index,follow"/>
     <meta name=robots content="index,follow"/>
 
-
     <link rel="stylesheet" type="text/css" href="css/main-mobile.css"/>
 </head>
 <body>
-
 <div id="main">
     
     <div class="section section_screen_1">
@@ -45,9 +43,9 @@
             </a>
         </h1>
         <!-- Button trigger modal -->
-        <a href="javascript:void(0)" class="bxh_icon" data-bs-toggle="modal" data-bs-target="#exampleModal"></a>
+
         <div class="container h-100 position-relative">
-            <a href="#" class="sprite btn_play"></a>
+            <a href="#javascript:void(0)" class="sprite btn_play" data-bs-toggle="modal" data-bs-target="#modal_trailer"></a>
         </div>
         <div class="top_route">
             <a href="#" class="top_route__home sprite"></a>
@@ -67,40 +65,6 @@
     </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
 <div class="section section_screen_2">
     <div class="container h-100 position-relative d-flex align-items-center">
@@ -113,7 +77,6 @@
                     data-bs-toggle="tooltip">
                     
                 </a>
-
             
                 <a  href="javascript:void(0)"
                     class="sprite milestone_item milestone_item_1"
@@ -122,7 +85,6 @@
                     data-bs-toggle="tooltip">
                     
                 </a>
-
             
                 <a  href="javascript:void(0)"
                     class="sprite milestone_item milestone_item_2"
@@ -131,7 +93,6 @@
                     data-bs-toggle="tooltip">
                     
                 </a>
-
             
                 <a  href="javascript:void(0)"
                     class="sprite milestone_item milestone_item_3"
@@ -140,7 +101,6 @@
                     data-bs-toggle="tooltip">
                     
                 </a>
-
             
                 <a  href="javascript:void(0)"
                     class="sprite milestone_item milestone_item_4"
@@ -149,37 +109,21 @@
                     data-bs-toggle="tooltip">
                     
                 </a>
-
             
         </div>
         <div class="btn_bottom">
             <a href="#" class="sprite btn_thele" data-bs-toggle="modal" data-bs-target="#modal_rules"></a>
+            <a href="#" class="sprite btn_signin"></a>
             <div class="sprite registered mx-auto">
                 <strong class="fs_20">Đã đăng ký</strong>
                 <br/>
                 <strong class="fs_32">150.354</strong>
             </div>
-            <a href="#" class="sprite btn_signin"></a>
         </div>
     </div>
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-<script type="text/javascript">
-
-</script>
     
 
 
@@ -833,57 +777,17 @@
 
 
 </div>
-
+<div class="modal fade" id="modal_trailer">
+    <div class="modal-dialog modal-dialog-centered  modal-lg">
+        <div class="modal-content">
+            <iframe width="100%" height="485" src="https://www.youtube.com/embed/yb_ocU91MUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
 <!-- JS -->
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
-<script type="text/javascript">
-    // $(document).ready(function () {
-    //     $("#main").onepage_scroll({
-    //         sectionContainer: ".section",     // sectionContainer accepts any kind of selector in case you don't want to use section
-    //         easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
-    //                                          // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
-    //         animationTime: 1000,             // AnimationTime let you define how long each section takes to animate
-    //         pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
-    //         updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
-    //         beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
-    //         afterMove: function(index) {},   // This option accepts a callback function. The function will be called after the page moves.
-    //         loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
-    //         keyboard: true,                  // You can activate the keyboard controls
-    //         responsiveFallback: false,        // You can fallback to normal page scroll by defining the width of the browser in which
-    //         // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
-    //         // the browser's width is less than 600, the fallback will kick in.
-    //         direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".
-    //     });
-    //
-    //     var $win = $(window);
-    //     var $lay = $('.milestone');
-    //     var baseSize = {
-    //         w: 1156
-    //     }
-    //     function updateScale1() {
-    //         var ww = $win.width();
-    //         var newScale = 1;
-    //         // compare ratios
-    //         if (ww < baseSize.w) { // tall ratio
-    //             newScale = ww / baseSize.w;
-    //         }
-    //         $lay.css('transform', 'scale(' + newScale + ')');
-    //         //Make wrapper height scale
-    //         $('.wrapper').css('height', $lay.height() * newScale);
-    //         console.log(newScale);
-    //         //resizeObserver.observe(document.querySelector('.wrapper'))
-    //     }
-    //     //$(window).load(updateScale1);
-    //     updateScale1();
-    //
-    //
-    // })
-
-
-
-</script>
 </body>
 </html>

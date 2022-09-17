@@ -65,48 +65,46 @@
 
 
 /*Screen 2 - START*/
-.btn_bottom {position: absolute;bottom: -10%;left: 0;width: 100%;display: flex;flex-direction: column;justify-content: center;font-size: 30px;scale: 60%;
-  a {margin: 0 auto 10px}
-  .btn_thele {background-position:-20px 0;width: 348px;height: 112px;}
-  .btn_signin {background-position: 0 -130px;width: 389px;height: 133px;}
-  .registered {background-position: -13px -280px;width: 364px;height: 139px;text-align: center;color: black;padding: 40px 0 0;line-height: 24px;}
+.btn_bottom {position: absolute;bottom: -10%;left: 0;width: 100%;display: flex;justify-content: center;scale: 60%;flex-wrap: wrap;
+  a {margin: 0 }
+  .btn_thele {background-position:-11px 0;width: 337px;height: 116px;}
+  .btn_signin {background-position: -11px -125px;width: 341px;height: 117px;}
+  .registered {background-position:  0 -253px;width: 363px;height: 139px;text-align: center;font-size: 30px;color: black;padding: 40px 0 0;line-height: 24px;}
   @include media-breakpoint-up(md) {
     scale: 1;bottom: 3%;
   }
 }
 
-.milestone {background: url(../images/mobile/light.png) no-repeat 50% 50%;width: 100%;height: 553px;position: absolute;left: 0;top: 10%;background-size: contain;
+.milestone {width: 100%;position: absolute;left: 0;top: 20%;scale: 60%;height: 50%;
   @include media-breakpoint-up(md) {
-    background-size: 100% 100%;left: 0;top: 20%;
+    //background: url(../images/mobile/light.png) no-repeat 50% 50%;
+    height: 553px;
+    scale: 1;
+    background-size: 100% 100%;left: 0;top: 10%;
   }
 }
-.milestone_item {width: 156px;height: 150px;position: absolute;
-  //scale: 50%;
-  //@include media-breakpoint-up(md) {
-  //  scale: 1;
-  //}
+.milestone_item {width: 156px;height: 150px;position: absolute;}
+.milestone_item_0 {background-position: -497px 0;left: -30%;top: 45%;
+  &.active {background-position: -675px 0;}
 }
-.milestone_item_0 {background-position: -416px 0;left: 0;top:20px;
-  &.active {background-position: -594px 0;}
+.milestone_item_1 {background-position: -497px -159px;left: -5%;top: 0;
+  &.active {background-position:-675px -157px;}
 }
-.milestone_item_1 {background-position: -416px -159px;left: 40px;top: 20px;
-  &.active {background-position: -594px -157px;}
+.milestone_item_2 {background-position: -497px -322px; left: 35%;top: -20%;
+  &.active {background-position: -675px -323px;}
 }
-.milestone_item_2 {background-position: -416px -322px;left: 80px;top: 20px;
-  &.active {background-position:  -594px -323px;}
+.milestone_item_3 {background-position: -497px -477px;right: -15%;top: 0%;
+  &.active {background-position: -675px -479px;}
 }
-.milestone_item_3 {background-position: -416px -477px;right: 120px;top: 20px;
-  &.active {background-position: -594px -479px;}
-}
-.milestone_item_4 {background-position: -416px -644px;right: 160px;top: 20px;
-  &.active {background-position: -594px -644px;}
+.milestone_item_4 {background-position: -497px -644px;right: -30%;top:45%;
+  &.active {background-position: -675px -644px;}
 }
 @include media-breakpoint-up(md) {
-  .milestone_item_0 {}
-  .milestone_item_1 {}
-  .milestone_item_2 {}
-  .milestone_item_3 {}
-  .milestone_item_4 {}
+  .milestone_item_0 {left: -2%;top: 45%;}
+  .milestone_item_1 {left: 16%;top: 25%;}
+  .milestone_item_2 {left: 40%;top: 15%;}
+  .milestone_item_3 {right: 15%;top: 24%;}
+  .milestone_item_4 {right: 0%;top: 45%;}
 }
 
 /*Screen 2 - END*/
