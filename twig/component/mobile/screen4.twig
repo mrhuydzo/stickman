@@ -12,21 +12,21 @@
     <div class="container position-relative h-100">
         <div class="row align-items-center py-8">
             <div class="col-lg-5 offset-lg-2">
-                <div class="tab-content card_selector__content">
-                    {% for i in arr %}
-                        <div class="tab-pane fade {{i.show}} {{i.active}}" id="card_selector__content{{ i.id }}">
-                            <div class="fs_0 text-end">
-                                <img src="images/hero/card/{{i.img}}" alt="{{i.title}}" />
-                            </div>
-                        </div>
-                    {% endfor %}
-                </div>
+{#                <div class="tab-content card_selector__content">#}
+{#                    {% for i in arr %}#}
+{#                        <div class="tab-pane fade {{i.show}} {{i.active}}" id="card_selector__content{{ i.id }}">#}
+{#                            <div class="fs_0 text-end">#}
+{#                                <img src="images/hero/card/{{i.img}}" alt="{{i.title}}" />#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    {% endfor %}#}
+{#                </div>#}
             </div>
             <div class="col-lg-5">
                 <ul class="nav nav-tabs card_selector__tab">
                     {% for i in arr %}
                         <li>
-                            <button class="sprite card_selector__item{{i.id}} {{i.active}}" data-bs-toggle="tab" data-bs-target="#card_selector__content{{i.id }}">{{i.title}}</button>
+                            <button class="sprite card_selector__item{{i.id}} {{i.active}}" data-bs-toggle="modal" data-bs-target="#modal_card{{i.id }}">{{i.title}}</button>
                         </li>
                     {%endfor%}
                 </ul>
@@ -49,3 +49,16 @@
         </div>
     </div>
 </div>
+
+{% for i in arr %}
+<div class="modal fade modal_card" id="modal_card{{i.id }}">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="text-center position-relative">
+                <a href="javascript:void(0)"  class="sprite btn-close" data-bs-dismiss="modal">xx</a>
+                <img src="images/hero/card/{{i.img}}" alt="{{i.title}}" />
+            </div>
+        </div>
+    </div>
+</div>
+{%endfor%}
