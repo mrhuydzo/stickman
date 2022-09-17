@@ -37,8 +37,8 @@
   a {width: 48px;height: 48px;
     + a {margin-left: 10px}
   }
-  .top_route__home {background-position: -194px -519px;}
-  .top_route__facebook {background-position: -264px -519px;}
+  .top_route__home {background-position: -365px -466px;}
+  .top_route__facebook {background-position: -435px -466px;}
 }
 
 @include media-breakpoint-up(md) {
@@ -187,7 +187,11 @@ $thumbs: (
     }
   }
 }
-
+.hero_clip {background-position: -188px -459px;width: 152px;height: 154px;position: absolute;top: 50%;right: 0;transform: translateY(-50%);scale: 70%;
+  @include media-breakpoint-up(md) {
+    scale: 1;
+  }
+}
 
 /*Screen 3 - END*/
 
@@ -212,7 +216,7 @@ $thumbs: (
 }
 .card_selector__content {}
 .modal_card {
-  .btn-close {background-position: -340px -511px;width: 64px;height: 64px;position: absolute;right: -10px;top: -10px;}
+  .btn-close {background-position: -392px -561px;width: 64px;height: 64px;position: absolute;right: -10px;top: -10px;}
   .modal-content {background: transparent;border: none;
     img {border-radius: 12px}
   }
