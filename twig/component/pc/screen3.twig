@@ -10,44 +10,44 @@
 
 {%
     set heroAcquy = [
-        {id: 1,img: '1_acquy1',title: 'Ác quỷ 1',active: 'active',show: 'show'},
-        {id: 2,img: '1_acquy2',title: 'Ác quỷ 2',active: '',show: ''},
-        {id: 3,img: '1_acquy3',title: 'Ác quỷ 3',active: '',show: ''},
+        {id: 1,img: '1_acquy1',title: 'Ác quỷ 1',active: 'active',show: 'show',video: 'V3V6TyzGVWQ'},
+        {id: 2,img: '1_acquy2',title: 'Ác quỷ 2',active: '',show: '',video: '3N_c6kTaF1A'},
+        {id: 3,img: '1_acquy3',title: 'Ác quỷ 3',active: '',show: '',video: 'nTt1_mSTIX4'},
     ]
 %}
 {%
     set heroThienthan = [
-        {id: 1,img: '2_thienthan1',title: 'Thiên thần 1',active: 'active',show: 'show'},
-        {id: 2,img: '2_thienthan2',title: 'Thiên thần 2',active: '',show: ''},
-        {id: 3,img: '2_thienthan3',title: 'Thiên thần 3',active: '',show: ''},
+        {id: 1,img: '2_thienthan1',title: 'Thiên thần 1',active: 'active',show: 'show',video: 'N5Diu_5OwFA'},
+        {id: 2,img: '2_thienthan2',title: 'Thiên thần 2',active: '',show: '',video: ''},
+        {id: 3,img: '2_thienthan3',title: 'Thiên thần 3',active: '',show: '',video: 'Ak8ZtrG7ynU'},
     ]
 %}
 {%
     set heroKim = [
-        {id: 1,img: '3_Kim1',title: 'Kim 1',active: 'active',show: 'show'},
-        {id: 2,img: '3_Kim2',title: 'Kim 2',active: '',show: ''},
-        {id: 3,img: '3_Kim3',title: 'Kim 3',active: '',show: ''},
+        {id: 1,img: '3_Kim1',title: 'Kim 1',active: 'active',show: 'show',video: 'BmE3aaybA8I'},
+        {id: 2,img: '3_Kim2',title: 'Kim 2',active: '',show: '',video: '0wT4pOyTsew'},
+        {id: 3,img: '3_Kim3',title: 'Kim 3',active: '',show: '',video: 'JKvTb_XFUjE'},
     ]
 %}
 {%
     set heroMoc = [
-        {id: 1,img: '4_moc1',title: 'Mộc 1',active: 'active',show: 'show'},
-        {id: 2,img: '4_moc2',title: 'Mộc 2',active: '',show: ''},
-        {id: 3,img: '4_moc3',title: 'Mộc 3',active: '',show: ''},
+        {id: 1,img: '4_moc1',title: 'Mộc 1',active: 'active',show: 'show',video: 'SKixBXRdcgk'},
+        {id: 2,img: '4_moc2',title: 'Mộc 2',active: '',show: '',video: '0bBHlbuCF24'},
+        {id: 3,img: '4_moc3',title: 'Mộc 3',active: '',show: '',video: 'G-kveZBNKGM'},
     ]
 %}
 {%
     set heroThuy = [
-        {id: 1,img: '5_thuy1',title: 'Thủy 1',active: 'active',show: 'show'},
-        {id: 2,img: '5_thuy2',title: 'Thủy 2',active: '',show: ''},
-        {id: 3,img: '5_thuy3',title: 'Thủy 3',active: '',show: ''},
+        {id: 1,img: '5_thuy1',title: 'Thủy 1',active: 'active',show: 'show',video: 'seZo_PI7oHA'},
+        {id: 2,img: '5_thuy2',title: 'Thủy 2',active: '',show: '',video: 'YGwrxB5XAFI'},
+        {id: 3,img: '5_thuy3',title: 'Thủy 3',active: '',show: '',video: 'NO7XVQRLEHA'},
     ]
 %}
 {%
     set heroHoa = [
-        {id: 1,img: '6_hoa1',title: 'Hỏa 1',active: 'active',show: 'show'},
-        {id: 2,img: '6_hoa2',title: 'Hỏa 2',active: '',show: ''},
-        {id: 3,img: '6_hoa3',title: 'Hỏa 3',active: '',show: '',}
+        {id: 1,img: '6_hoa1',title: 'Hỏa 1',active: 'active',show: 'show',video: '1VeRRVXEaPc'},
+        {id: 2,img: '6_hoa2',title: 'Hỏa 2',active: '',show: '',video: 'LkFRSGCg6p8'},
+        {id: 3,img: '6_hoa3',title: 'Hỏa 3',active: '',show: '',video: 'Rjfybf7RU_o',}
     ]
 %}
 
@@ -76,7 +76,10 @@
                                             </div>
                                             <div class="col-5 d-flex justify-content-end">
                                                 <div class="hero_clip">
-                                                    <iframe width="343" height="623" src="https://www.youtube.com/embed/_wVvuSkTaY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    <iframe width="343" height="623" src="https://www.youtube.com/embed/{{i.video}} "
+                                                            title="YouTube video player"
+                                                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
                                                 </div>
                                             </div>
                                         </div>
@@ -108,7 +111,9 @@
                                             </div>
                                             <div class="col-5 d-flex justify-content-end">
                                                 <div class="hero_clip">
-                                                    <iframe width="343" height="623" src="https://www.youtube.com/embed/_wVvuSkTaY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    <iframe width="343" height="623" src="https://www.youtube.com/embed/{{i.video}} "
+                                                            title="YouTube video player"
+                                                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                                 </div>
                                             </div>
                                         </div>
@@ -140,7 +145,9 @@
                                             </div>
                                             <div class="col-5 d-flex justify-content-end">
                                                 <div class="hero_clip">
-                                                    <iframe width="343" height="623" src="https://www.youtube.com/embed/_wVvuSkTaY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    <iframe width="343" height="623" src="https://www.youtube.com/embed/{{i.video}} "
+                                                            title="YouTube video player"
+                                                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                                 </div>
                                             </div>
                                         </div>
@@ -172,7 +179,9 @@
                                             </div>
                                             <div class="col-5 d-flex justify-content-end">
                                                 <div class="hero_clip">
-                                                    <iframe width="343" height="623" src="https://www.youtube.com/embed/_wVvuSkTaY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    <iframe width="343" height="623" src="https://www.youtube.com/embed/{{i.video}} "
+                                                            title="YouTube video player"
+                                                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                                 </div>
                                             </div>
                                         </div>
@@ -204,7 +213,9 @@
                                             </div>
                                             <div class="col-5 d-flex justify-content-end">
                                                 <div class="hero_clip">
-                                                    <iframe width="343" height="623" src="https://www.youtube.com/embed/_wVvuSkTaY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    <iframe width="343" height="623" src="https://www.youtube.com/embed/{{i.video}} "
+                                                            title="YouTube video player"
+                                                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                                 </div>
                                             </div>
                                         </div>
@@ -236,7 +247,9 @@
                                             </div>
                                             <div class="col-5 d-flex justify-content-end">
                                                 <div class="hero_clip">
-                                                    <iframe width="343" height="623" src="https://www.youtube.com/embed/_wVvuSkTaY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                    <iframe width="343" height="623" src="https://www.youtube.com/embed/{{i.video}} "
+                                                            title="YouTube video player"
+                                                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                                 </div>
                                             </div>
                                         </div>

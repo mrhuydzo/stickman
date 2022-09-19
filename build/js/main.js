@@ -27,6 +27,22 @@ $(document).ready(function () {
     //     $("#modal_trailer").attr('src',$videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0" );
     // })
 
+    function stopVideo(player) {
+        let vidSrc = player.prop('src');
+        player.prop('src', vidSrc);
+    };
 
+    $('#hero_gold__tab button').on('shown.bs.tab', function(e){
+        // console.log(e.target, e.relatedTarget);
+        var tabId = e.relatedTarget.attributes['data-bs-target'].value;
+        var tabIframe = $(tabId).find('iframe');
+        stopVideo(tabIframe);
+    });
+
+    $('#modal_trailer').on('hide.bs.modal', function(e){
+        //var tabId = e.relatedTarget.attributes['data-bs-target'].value;
+        var tabIframe = $(this).find('iframe');
+        stopVideo(tabIframe);
+    });
 
 })
