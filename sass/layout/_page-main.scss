@@ -29,16 +29,8 @@
 }
 
 .footer {padding: 30px 0;position: absolute;left: 0;bottom: 0;width: 100%}
-#modal_chart {
-  // .modal-dialog {max-width: 950px}
-  //.modal-content {background:  url("../images/pc/popup-chart.png") no-repeat 0 0;width: 924px;height: 504px;border: none;margin: 0 auto;padding: 100px 60px 60px}
-  //.modal_chart__inner {overflow-y: scroll;height: 100%;color: #960a0f;padding: 0 10px 0 0;font-weight: bold;
-  //  table {text-align: center;width: 100%;border: none;
-  //    th {padding: 8px;font-size: 20px;font-weight: bold}
-  //    td {padding: 4px;font-size: 16px;}
-  //  }
-  //}
-  .btn-close {background-position: -36px -733px;width: 57px;height: 57px;position: absolute;right: -50px;top: -10px;
+#modal_play_now {
+  .btn-close {background-position: -36px -733px;width: 57px;height: 57px;position: absolute;right: -25px;top: -25px;
     &:hover {opacity: .8}
   }
 }
