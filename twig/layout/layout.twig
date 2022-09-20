@@ -52,6 +52,7 @@
 {% include "../component/pc/modal-rule.twig" %}
 {% include "../component/pc/modal-trailer.twig" %}
 {% include "../component/pc/modal-register.twig" %}
+{% include "../component/pc/modal-play-now.twig" %}
 
 <!-- JS -->
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
@@ -76,6 +77,11 @@
             }
         )
     })
+
+    var myModal = new bootstrap.Modal(document.getElementById("modal_play_now"), {});
+    document.onreadystatechange = function () {
+        myModal.show();
+    };
 </script>
 </body>
 </html>

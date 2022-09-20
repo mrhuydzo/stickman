@@ -824,8 +824,8 @@
 
             <div class="modal_register__inner">
                 <form action="" class="form_register">
-                    <h3 class="mb-4">SỐ ĐIỆN THOẠI</h3>
-                    <div class="mb-4">
+                    <h3 class="mb-3 mb-sm-4">SỐ ĐIỆN THOẠI</h3>
+                    <div class="mb-3 mb-sm-4">
                         <input type="tel" placeholder="" class="input_phone w-100" />
                     </div>
                     <div>
@@ -871,6 +871,16 @@
         </div>
     </div>
 </div>
+<div class="modal fade" id="modal_play_now">
+    <div class="modal-dialog modal-dialog-centered  modal-lg">
+        <div class="modal-content">
+            <a href="javascript:void(0)"  class="sprite btn-close" data-bs-dismiss="modal">xx</a>
+            <div>
+                <img src="images/popup-play-now.jpg" alt=""/>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- JS -->
 <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
@@ -894,8 +904,12 @@
             stopVideo(tabIframe);
         });
 
-    })
 
+    })
+    var myModal = new bootstrap.Modal(document.getElementById("modal_play_now"), {});
+    document.onreadystatechange = function () {
+        myModal.show();
+    };
 </script>
 </body>
 </html>

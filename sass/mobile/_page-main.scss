@@ -121,7 +121,13 @@
 
 #modal_register {
   .modal-dialog {max-width: 712px}
-  .modal-content {background:  url("../images/mobile/bg-popup-register.png") no-repeat 0 0;width: 532px;height: 388px;border: none;margin: 0 auto;padding: 70px 60px 60px;background-size: contain;
+  .modal-content {background:  url("../images/mobile/bg-popup-register.png") no-repeat 0 0;width: 532px;height: 388px;border: none;margin: 0 auto;padding: 42px 60px 60px;background-size: contain;
+    @media screen and (min-width: 376px) {
+      padding: 50px 60px 60px
+    }
+    @include media-breakpoint-up(sm) {
+      padding: 70px 60px 60px
+    }
     @include media-breakpoint-up(md) {
       background-size: cover;padding: 100px 60px 60px;
     }
