@@ -8,7 +8,7 @@ const dependents = require('gulp-dependents')
 //const cssnano = require('gulp-cssnano');
 //const rename = require('gulp-rename');
 //const del = require('del');
-//const imagemin = require('gulp-imagemin');
+const imagemin = require('gulp-imagemin');
 //const replace = require('gulp-replace');
 
 browserSync.create();
@@ -46,28 +46,28 @@ function startServe() {
         port: 3002
     });
     gulp.watch('sass/**/*.scss', compileSass);
-    //gulp.watch(files.imagePath, minifyImage);
+    gulp.watch(files.imagePath, minifyImage);
     gulp.watch('twig/**/*.twig', compileTwig);
     gulp.watch(files.htmlPath).on('change', browserSync.reload);
 }
 //
-// function minifyImage() {
-//     return gulp.src(files.imagePath)
-//         .pipe(imagemin([
-//             imagemin.gifsicle({interlaced: true, progressive: true}),
-//             imagemin.mozjpeg({quality: 100, progressive: true}),
-//             imagemin.optipng({optimizationLevel: 1, progressive: true}),
-//             imagemin.svgo({
-//                 plugins: [
-//                     {removeViewBox: true},
-//                     {cleanupIDs: false}
-//                 ]
-//             })
-//         ], {
-//             verbose: true
-//         }))
-//         .pipe(gulp.dest('build/images'));
-// }
+function minifyImage() {
+    return gulp.src(files.imagePath)
+        .pipe(imagemin([
+            imagemin.gifsicle({interlaced: true, progressive: true}),
+            imagemin.mozjpeg({quality: 100, progressive: true}),
+            imagemin.optipng({optimizationLevel: 1, progressive: true}),
+            imagemin.svgo({
+                plugins: [
+                    {removeViewBox: true},
+                    {cleanupIDs: false}
+                ]
+            })
+        ], {
+            verbose: true
+        }))
+        .pipe(gulp.dest('build/images'));
+}
 
 /*
 function cleanDist() {
@@ -104,5 +104,5 @@ exports.default = gulp.series(
 
 exports.build = gulp.series(
     gulp.parallel(compileSass, compileTwig),
-    //gulp.parallel(copyHtml, copyCss, minifyImage)
+    gulp.parallel(minifyImage)
 );
