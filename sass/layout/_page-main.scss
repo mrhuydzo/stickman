@@ -175,7 +175,7 @@
     &.active {background-position: -422px -911px;}
   }
 }
-#hero_intro__content {padding: 200px 0}
+#hero_intro__content {padding: 200px 0;display: flex;align-items: center;}
 
 $thumbs: (
         "1" "devil" "../images/hero/thumb/1_acquy1.png" "../images/hero/thumb/1_acquy1_active.png",
@@ -199,7 +199,7 @@ $thumbs: (
 );
 
 
-.hero_figure {
+.hero_figure {position: relative;
   ul {display: flex;flex-direction: column;position: absolute;left: 5%;top: 30%;
     li {
       + li {margin: 10px 0 0}

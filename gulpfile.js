@@ -8,7 +8,7 @@ const dependents = require('gulp-dependents')
 //const cssnano = require('gulp-cssnano');
 //const rename = require('gulp-rename');
 //const del = require('del');
-const imagemin = require('gulp-imagemin');
+const imagemin = import('gulp-imagemin');
 //const replace = require('gulp-replace');
 
 browserSync.create();
