@@ -13,7 +13,7 @@
 .section_screen_1 {background-image: url("../images/mobile/bg-screen-1.jpg");}
 .section_screen_2 {background-image: url("../images/mobile/bg-screen-2.jpg");}
 .section_screen_3 {background-image: url("../images/mobile/bg-screen-3.jpg");}
-.section_screen_4 {background-image: url("../images/mobile/bg-screen-4.jpg");}
+.section_screen_4 {background-image: url("../images/mobile/bg-screen-4.jpg"); height: auto}
 
 @include media-breakpoint-up(md) {
   .section {background-size: cover;background-position: 50% 0;height: 860px}
