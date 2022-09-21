@@ -11,13 +11,13 @@
     <div class="container h-100 position-relative d-flex align-items-center">
         <div class="milestone">
             {% for i in arr %}
-            <a  href="javascript:void(0)"
+            <span
                 class="sprite milestone_item milestone_item_{{ i.id }}"
                 data-id="milestone_item_{{ i.id }}"
                 data-bs-html="true"
                 data-bs-toggle="tooltip">
                 {{ item.text }}
-            </a>
+            </span>
 
             {% endfor %}
         </div>
