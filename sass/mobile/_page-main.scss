@@ -1,3 +1,5 @@
+:root {touch-action: pan-x pan-y;height: 100%}
+body{touch-action: manipulation;}
 .sprite {background-image: url("../images/mobile/sprite-mobile.png");background-repeat: no-repeat;background-position: 0 0;font-size: 0;display: inline-block}
 
 .page_main {}
@@ -240,7 +242,7 @@ $thumbs: (
 /*Screen 4 - START*/
 .card_selector__tab {border: none;scale: 70%;transform-origin: top right;
   li {margin: 0 0 12px;
-    button {background-color: transparent;font-size: 0;text-indent: -9999em;width: 351px;height: 113px;border: none;outline: none}
+    button {background-color: transparent;font-size: 0;text-indent: -9999em;width: 351px;height: 113px;border: none;outline: none;position: relative}
   }
   .card_selector__item1 {background-position: -849px -16px;
     &.active {background-position: -1210px -19px;}
